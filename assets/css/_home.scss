@@ -5,8 +5,11 @@
 	overflow-x: hidden;
 	margin-top: -78px;
 	z-index: 1;
+	position: relative;
 
 	.swiper-wrapper {
+		height: 100%;
+		max-height: 100%;
 		position: relative;
 		display: flex;
 		align-items: center;
@@ -90,8 +93,8 @@
 
 	.swiper-button-prev,
 	.swiper-button-next {
-		position: absolute !important;
-		top: 45% !important;
+		position: absolute;
+		top: 75%;
 		width: 50px;
 		height: 50px;
 		border-radius: 50%;
@@ -118,5 +121,44 @@
 	.swiper-button-prev:hover,
 	.swiper-button-next:hover {
 		background-color: var(--secondary-accent-color);
+	}
+}
+
+#stats {
+	height: fit-content;
+	padding: 3em 0;
+	.container {
+		.stat {
+			width: 100%;
+			height: 165px;
+			.bg-image {
+				z-index: 0;
+				object-fit: cover;
+			}
+			.overlay {
+				opacity: 0.95;
+				z-index: 1;
+			}
+			&:nth-of-type(1) {
+				.overlay {
+					background-color: var(--primary-accent-color);
+				}
+			}
+			&:nth-of-type(2) {
+				.overlay {
+					background-color: var(--secondary-accent-color);
+				}
+			}
+			&:nth-of-type(3) {
+				.overlay {
+					background-color: var(--primary-accent-color);
+				}
+			}
+			&:nth-of-type(4) {
+				.overlay {
+					background-color: var(--secondary-accent-color);
+				}
+			}
+		}
 	}
 }
