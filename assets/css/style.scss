@@ -303,7 +303,7 @@ header {
 					&::after {
 						content: url("../images/angle-down.png");
 						position: absolute;
-						top: 35%;
+						top: 39%;
 						right: -8px;
 						width: 10px;
 						height: 10px;
@@ -671,6 +671,46 @@ footer {
 						}
 					}
 				}
+			}
+		}
+	}
+}
+
+#common-banner {
+	height: 400px;
+	width: 100%;
+	background: url(../images/footer-bg.jpeg) center center;
+	object-fit: cover;
+
+	.overlay {
+		background: linear-gradient(91.86deg, #e2231a 1.57%, #ff4c00 98.37%);
+		opacity: 0.97;
+		z-index: 0 !important;
+	}
+	.container {
+		height: 100%;
+
+		.content {
+			width: 47%;
+			height: fit-content;
+
+			h5 {
+				color: var(--secondary-accent-color);
+			}
+			h1 {
+				color: var(--background-color);
+			}
+		}
+
+		.image-wrapper {
+			width: 53%;
+			height: 100%;
+			z-index: 3 !important;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: fill;
+				z-index: 3 !important;
 			}
 		}
 	}

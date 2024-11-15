@@ -297,7 +297,7 @@ header .container .main-menu .menu-links .menu-item-has-children {
 header .container .main-menu .menu-links .menu-item-has-children::after {
   content: url("../images/angle-down.png");
   position: absolute;
-  top: 35%;
+  top: 39%;
   right: -8px;
   width: 10px;
   height: 10px;
@@ -634,6 +634,45 @@ footer .footer-bar .container .fb-links a:last-of-type {
 }
 footer .footer-bar .container .fb-links a:last-of-type::after {
   display: none;
+}
+
+#common-banner {
+  height: 400px;
+  width: 100%;
+  background: url(../images/footer-bg.jpeg) center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#common-banner .overlay {
+  background: linear-gradient(91.86deg, #e2231a 1.57%, #ff4c00 98.37%);
+  opacity: 0.97;
+  z-index: 0 !important;
+}
+#common-banner .container {
+  height: 100%;
+}
+#common-banner .container .content {
+  width: 47%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#common-banner .container .content h5 {
+  color: var(--secondary-accent-color);
+}
+#common-banner .container .content h1 {
+  color: var(--background-color);
+}
+#common-banner .container .image-wrapper {
+  width: 53%;
+  height: 100%;
+  z-index: 3 !important;
+}
+#common-banner .container .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  z-index: 3 !important;
 }
 
 /* Responsive layout for Mobile devices */
@@ -1165,4 +1204,6 @@ footer .footer-bar .container .fb-links a:last-of-type::after {
 #news .container .news-grid .post .content a {
   background-color: var(--primary-accent-color);
   color: var(--background-color);
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* Responsive layout for Mobile devices *//*# sourceMappingURL=style.css.map */
