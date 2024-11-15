@@ -49,10 +49,30 @@ $(document).ready(function () {
 $(document).ready(function () {
 	const swiper = new Swiper(".home-swiper", {
 		loop: true,
-		/*autoplay: {
-			delay: 5000,
+		autoplay: {
+			delay: 7000,
 			disableOnInteraction: false,
-		},*/
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		effect: "slide",
+	});
+});
+
+/* Location Slider */
+$(document).ready(function () {
+	const swiper = new Swiper(".location-swiper", {
+		loop: true,
+		autoplay: {
+			delay: 7000,
+			disableOnInteraction: false,
+		},
 		pagination: {
 			el: ".swiper-pagination",
 			clickable: true,
