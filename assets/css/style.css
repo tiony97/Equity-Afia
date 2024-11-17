@@ -231,7 +231,7 @@ header {
   max-width: 100vw;
   height: 67px;
   background: transparent;
-  z-index: 99 !important;
+  z-index: 105 !important;
   transition: all 0.3s ease;
 }
 header * {
@@ -1206,4 +1206,155 @@ footer .footer-bar .container .fb-links a:last-of-type::after {
   color: var(--background-color);
 }
 
-/* Responsive layout for Mobile devices *//*# sourceMappingURL=style.css.map */
+/* Responsive layout for Mobile devices */
+/* About Page */
+#about-details {
+  padding: 4em 0;
+}
+#about-details .container .image-wrapper {
+  width: 40%;
+}
+#about-details .container .image-wrapper img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#about-details .container .content {
+  width: 55%;
+}
+#about-details .container .content h5 {
+  color: var(--secondary-accent-color);
+}
+#about-details .container .content .values .value {
+  width: 45%;
+}
+#about-details .container .content .values .value img {
+  width: 97px;
+  height: 82px;
+}
+#about-details .container .content .values .value h6 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27.6px;
+  color: var(--secondary-accent-color);
+}
+
+#core-values {
+  position: relative;
+  padding: 3em 0;
+}
+#core-values .bg-image {
+  z-index: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#core-values .overlay {
+  background-color: var(--primary-accent-color);
+  opacity: 0.8;
+  z-index: 1;
+}
+#core-values .container {
+  color: var(--background-color);
+}
+#core-values .container * {
+  z-index: 3;
+}
+#core-values .container .values-grid {
+  width: 100%;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 1.5em;
+}
+#core-values .container .values-grid:last-of-type {
+  border-bottom: 0;
+}
+#core-values .container .values-grid .value {
+  border-right: 0.5px solid rgba(255, 255, 255, 0.4);
+}
+#core-values .container .values-grid .value span {
+  font-size: 100px; /* Adjust size as needed */
+  line-height: 100px;
+  font-weight: bold;
+  color: rgba(226, 36, 26, 0.937254902); /* Inside text color */
+  text-shadow: -5px -5px 0 #fff, 5px -5px 0 #fff, -5px 5px 0 #fff, 5px 5px 0 #fff, 0 -5px 0 #fff, 0 5px 0 #fff, -5px 0 0 #fff, 5px 0 0 #fff; /* Right center */
+}
+#core-values .container .values-grid .value:last-of-type {
+  border-right: 0;
+}
+#core-values .container .values-grid .value p {
+  margin-top: 0.4em;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+}
+
+#approach {
+  min-height: 545px;
+}
+#approach .image-wrapper {
+  height: 100%;
+  width: 100%;
+}
+#approach .image-wrapper img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#approach .content {
+  padding: 0 3.5em;
+}
+#approach .content h5 {
+  color: var(--secondary-accent-color);
+}
+#approach .content a {
+  background-color: var(--primary-accent-color);
+  color: var(--background-color);
+}
+
+/* Responsive layout for Mobile devices */
+/* SERVICES PAGE CONTENT */
+#services-content {
+  padding: 3em 0;
+}
+#services-content .container .services-grid .service {
+  width: 100%;
+  height: 250px;
+  padding: 1.5em 1em;
+}
+#services-content .container .services-grid .service .bg-image {
+  z-index: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#services-content .container .services-grid .service .overlay {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55.83%, rgba(0, 0, 0, 0.8) 85.39%);
+  z-index: 1;
+}
+#services-content .container .services-grid .service h5,
+#services-content .container .services-grid .service a {
+  z-index: 3;
+}
+#services-content .container .services-grid .service h5 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27.6px;
+  color: var(--background-color);
+  text-transform: capitalize;
+  margin-right: 0.7em;
+}
+#services-content .container .services-grid .service a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--background-color);
+  background-color: var(--primary-accent-color);
+  transition: all 0.3s ease-in;
+}
+#services-content .container .services-grid .service a:hover {
+  background-color: var(--background-color);
+  color: var(--primary-accent-color);
+}/*# sourceMappingURL=style.css.map */

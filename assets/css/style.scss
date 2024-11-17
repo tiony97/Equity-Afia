@@ -238,7 +238,7 @@ header {
 	max-width: 100vw;
 	height: 67px;
 	background: transparent;
-	z-index: 99 !important;
+	z-index: 105 !important;
 	transition: all 0.3s ease;
 	* {
 		z-index: 99;
@@ -875,3 +875,5 @@ footer {
 
 /* Style Imports */
 @import "./home";
+@import "./about";
+@import "./services";
