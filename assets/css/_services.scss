@@ -2,6 +2,34 @@
 #services-content {
 	padding: 3em 0;
 	.container {
+		.filter-section {
+			.intro {
+				width: 60%;
+			}
+			.filter-items {
+				h6 {
+					font-size: 18px;
+					font-weight: 700;
+					line-height: 23px;
+				}
+				span {
+					cursor: pointer;
+					padding: 8px 16px;
+					&:first-of-type {
+						color: var(--primary-accent-color);
+						background-color: #e2231a33;
+					}
+					&:nth-of-type(2) {
+						background-color: #ff9e1533;
+						color: var(--secondary-accent-color);
+					}
+					&:nth-of-type(3) {
+						background-color: var(--primary-accent-color);
+						color: var(--background-color);
+					}
+				}
+			}
+		}
 		.services-grid {
 			.service {
 				width: 100%;
@@ -20,12 +48,12 @@
 					z-index: 3;
 				}
 				h5 {
-					font-size: 24px;
+					width: 80%;
+					font-size: 20px;
 					font-weight: 700;
 					line-height: 27.6px;
 					color: var(--background-color);
 					text-transform: capitalize;
-					margin-right: 0.7em;
 				}
 				a {
 					width: 42px;
@@ -41,6 +69,91 @@
 						color: var(--primary-accent-color);
 					}
 				}
+			}
+		}
+	}
+}
+
+#service-item-details {
+	padding: 2em 0;
+	.container {
+		.image-wrapper {
+			width: 30%;
+			height: 334px;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		.content {
+			width: 60%;
+			height: fit-content;
+			h5 {
+				color: var(--secondary-accent-color);
+			}
+			h2 {
+				color: var(--foreground-color);
+			}
+			p {
+				color: var(--foreground-color);
+			}
+			.stats {
+				width: 100%;
+				.stat {
+					width: 50%;
+					.number {
+						font-size: 30px;
+						font-weight: 700;
+						line-height: 34.5px;
+						color: var(--primary-accent-color);
+					}
+					.title {
+						width: 90%;
+						font-size: 20px;
+						font-weight: 700;
+						line-height: 23px;
+						color: var(--foreground-color-light);
+					}
+				}
+			}
+		}
+	}
+}
+
+#service-features {
+	background-color: #fdf2f1;
+	padding-top: 3em;
+	padding-bottom: 2em;
+	.container {
+		flex-wrap: wrap;
+		.intro {
+			width: 40%;
+			margin-bottom: 1.5em;
+			p {
+				width: 80%;
+			}
+		}
+		.feature {
+			width: 20%;
+			border-right: 1px solid #0000000f;
+			padding: 0.5em 1em;
+			margin-bottom: 1.5em;
+			img {
+				width: 30px;
+				height: 30px;
+				object-fit: contain;
+			}
+			h6 {
+				font-size: 20px;
+				font-weight: 700;
+				line-height: 23px;
+				color: var(--foreground-color);
+				margin-top: 1em;
+			}
+			&:nth-of-type(4),
+			&:last-of-type {
+				border: none;
 			}
 		}
 	}

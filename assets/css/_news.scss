@@ -1,0 +1,60 @@
+/* NEWS PAGE STYLES */
+#news-posts {
+	padding: 3em 0;
+	.container {
+		.news-grid {
+			.post {
+				height: auto;
+				.image-wrapper {
+					height: 227px;
+					width: 100%;
+					position: relative;
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+					span {
+						position: absolute;
+						top: 10px;
+						right: 10px;
+						background-color: var(--primary-accent-color);
+						padding: 3px 6px;
+						color: var(--background-color);
+						font-size: 12px;
+						font-weight: 700;
+					}
+				}
+				.content {
+					width: 100%;
+					height: 180px;
+					background-color: #fdf2f1;
+					padding: 0 1em;
+					padding-top: 0.5em;
+					padding-bottom: 1em;
+					h6 {
+						font-size: 14px;
+						font-weight: 700;
+						line-height: 16.1px;
+						color: #00000080;
+					}
+					p {
+						font-size: 20px;
+						font-weight: 700;
+						line-height: 23px;
+						color: var(--foreground-color);
+					}
+					a {
+						background-color: var(--primary-accent-color);
+						color: var(--background-color);
+					}
+				}
+			}
+		}
+
+		.news-pg-btn {
+			background-color: var(--secondary-accent-color);
+			color: var(--background-color);
+		}
+	}
+}
