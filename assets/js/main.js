@@ -84,3 +84,44 @@ $(document).ready(function () {
 		effect: "slide",
 	});
 });
+
+/* Services Slider */
+$(document).ready(function () {
+	const swiper = new Swiper(".services-slider", {
+		loop: false,
+		slidesPerView: 4.5,
+		spaceBetween: 12,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
+		},
+
+		// If we need pagination
+		pagination: {
+			el: ".swiper-pagination",
+		},
+
+		// Navigation arrows
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+
+		// Responsive breakpoints
+		breakpoints: {
+			// when window width is >= 320px
+			400: {
+				slidesPerView: 1,
+			},
+			// when window width is >= 768px
+			768: {
+				slidesPerView: 1.5,
+			},
+			// when window width is >= 480px
+			1024: {
+				slidesPerView: 4.5,
+			},
+		},
+		effect: "slide",
+	});
+});

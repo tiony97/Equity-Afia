@@ -1,0 +1,170 @@
+/* CONTACT PAGE STYLES */
+#contact-form {
+	padding: 3em 0;
+	.container {
+		.content {
+			.ct-item {
+				img {
+					width: 24px;
+					height: 24px;
+					object-fit: contain;
+				}
+				p {
+					font-weight: 600;
+				}
+			}
+			.social {
+				img {
+					width: 40px;
+					height: 40px;
+					object-fit: contain;
+				}
+			}
+		}
+
+		form {
+			.form-item {
+				width: 100%;
+				height: fit-content;
+				label {
+					font-size: 16px;
+					font-weight: 700;
+					line-height: 18.4px;
+					color: var(--foreground-color);
+				}
+				input,
+				textarea,
+				select {
+					width: 100%;
+					color: var(--foreground-color);
+					padding: 0.5em;
+					border: none;
+					border: 1px solid #0000004d;
+					outline: none;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 22px;
+
+					&:focus {
+						border: 1px solid var(--secondary-accent-color);
+					}
+					&::placeholder {
+						font-size: 16px;
+						font-weight: 400;
+						line-height: 22px;
+						color: #0000004d;
+					}
+				}
+				input {
+					height: 33px;
+				}
+				textarea {
+					height: 160px;
+				}
+				select {
+					cursor: pointer;
+				}
+			}
+			button {
+				width: fit-content;
+				height: fit-content;
+				padding: 5px 15px;
+				background-color: var(--primary-accent-color);
+				color: var(--background-color);
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 18.4px;
+				img {
+					margin-left: 0.5em;
+				}
+			}
+		}
+	}
+}
+
+#other-locations {
+	min-height: 250px;
+	background-color: #fdf2f1;
+	padding: 2em 0;
+	.container {
+		.filter-section {
+			h2 {
+				width: 40%;
+			}
+			.filter-items {
+				form {
+					height: 35px;
+					width: 20vw;
+					input {
+						width: 100%;
+						height: 100%;
+						background: transparent;
+						color: var(--foreground-color);
+						padding: 0.5em;
+						border: none;
+						border: 1px solid #0000004d;
+						outline: none;
+						font-size: 16px;
+						font-weight: 400;
+						line-height: 22px;
+
+						&:focus {
+							border: 1px solid var(--secondary-accent-color);
+						}
+						&::placeholder {
+							font-size: 16px;
+							font-weight: 400;
+							line-height: 22px;
+							color: #0000004d;
+						}
+					}
+				}
+				span {
+					cursor: pointer;
+					padding: 8px 16px;
+					&:first-of-type {
+						color: var(--primary-accent-color);
+						background-color: #e2231a33;
+					}
+					&:nth-of-type(2) {
+						background-color: #ff9e1533;
+						color: var(--secondary-accent-color);
+					}
+					&:nth-of-type(3) {
+						background-color: var(--primary-accent-color);
+						color: var(--background-color);
+					}
+				}
+			}
+		}
+		.locations {
+			.location {
+				background-color: var(--background-color);
+				padding: 0.5em;
+				h6 {
+					font-size: 22px;
+					font-weight: 700;
+					line-height: 27.6px;
+					color: var(--foreground-color);
+				}
+				.ct-item {
+					img {
+						width: 24px;
+						height: 24px;
+						object-fit: contain;
+					}
+					p {
+						font-weight: 600;
+					}
+				}
+				a {
+					img {
+						width: 32px;
+						height: 32px;
+						object-fit: contain;
+					}
+				}
+			}
+		}
+	}
+}

@@ -111,3 +111,64 @@
 		}
 	}
 }
+
+#vacancies {
+	padding: 3em 0;
+	.container {
+		.filter-section {
+			.desc {
+				width: 60%;
+			}
+			.filter-items {
+				h6 {
+					font-size: 18px;
+					font-weight: 700;
+					line-height: 23px;
+					text-wrap: nowrap;
+				}
+				span {
+					cursor: pointer;
+					padding: 8px 16px;
+					&:first-of-type {
+						color: var(--primary-accent-color);
+						background-color: #e2231a33;
+					}
+					&:last-of-type {
+						background-color: var(--primary-accent-color);
+						color: var(--background-color);
+						margin-left: 1em;
+					}
+				}
+			}
+		}
+
+		.vacancy-grid {
+			.vacancy {
+				width: 100%;
+				min-height: 130px;
+				background-color: #fdf2f1;
+				padding: 0.5em;
+				h6 {
+					font-size: 20px;
+					font-weight: 700;
+					line-height: 23px;
+				}
+				span {
+					img {
+						width: 18px;
+						height: 18px;
+						object-fit: contain;
+					}
+					p {
+						font-weight: 700;
+					}
+				}
+				a {
+					background-color: var(--primary-accent-color);
+					color: var(--background-color);
+					padding: 4px 8px;
+				}
+			}
+		}
+	}
+}

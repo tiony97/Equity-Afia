@@ -73,10 +73,8 @@
 						<li class="menu-link menu-item-has-children">
 							<a href="javascript:void(0)">Resources</a>
 							<ul class="sub-menu">
-								<li class="menu-link"><a href="#">Resource 1</a></li>
-								<li class="menu-link"><a href="#">Resource 2</a></li>
-								<li class="menu-link"><a href="#">Resource 3</a></li>
-								<li class="menu-link"><a href="#">Resource 4</a></li>
+								<li class="menu-link"><a href="./news.html">News & Media</a></li>
+								<li class="menu-link"><a href="./careers.html">Careers</a></li>
 							</ul>
 						</li>
 
@@ -128,10 +126,8 @@
 					<li class="menu-link menu-item-has-children">
 						<a href="javascript:void(0)">Resources</a>
 						<ul class="sub-menu">
-							<li class="menu-link"><a href="#">Resource 1</a></li>
-							<li class="menu-link"><a href="#">Resource 2</a></li>
-							<li class="menu-link"><a href="#">Resource 3</a></li>
-							<li class="menu-link"><a href="#">Resource 4</a></li>
+							<li class="menu-link"><a href="./news.html">News & Media</a></li>
+							<li class="menu-link"><a href="./careers.html">Careers</a></li>
 						</ul>
 					</li>
 
@@ -149,11 +145,11 @@
 				<div class="container flex items-center justify-between">
 					<div class="content" style="z-index: 99">
 						<h5 style="z-index: 5">YOUR CARING HEALTHCARE PARTNER</h5>
-						<h1 style="z-index: 5" class="mt-2">About Us</h1>
+						<h1 style="z-index: 5" class="mt-2">Contact Us</h1>
 					</div>
 					<div class="image-wrapper">
 						<img
-							src="./assets/images/about-banner-image.png"
+							src="./assets/images/contact-banner-image.png"
 							alt="about-banner-image"
 							class="banner-image"
 							style="z-index: 5" />
@@ -161,8 +157,184 @@
 				</div>
 			</section>
 
-			<!--About Intro-->
-			<section id="about-details"></section>
+			<!--Contact Form-->
+			<section id="contact-form">
+				<div class="container grid grid-cols-1 lg:grid-cols-2 lg:gap-10 gap-5">
+					<div class="content">
+						<h2>We’re Always Happy To Hear from You!</h2>
+						<p class="mt-1 lg:w-4/5">
+							Fill out the form and an agent will be in touch with you as soon as possible.
+						</p>
+						<span class="ct-item flex items-center space-x-2 mt-6">
+							<img src="./assets/images/mi_email.png" alt="email" />
+							<p>info@equityafia.co.ke</p>
+						</span>
+						<span class="ct-item flex items-center space-x-2 mt-2">
+							<img src="./assets/images/mingcute_phone-add-line.png" alt="phone" />
+							<p>+254 765 100 000</p>
+						</span>
+						<div class="social flex items-center space-x-2 mt-6">
+							<a href="#"><img src="./assets/images/x.png" alt="x" /></a>
+							<a href="#"><img src="./assets/images/ct-fb.png" alt="x" /></a>
+						</div>
+					</div>
+
+					<form class="ct-form">
+						<div class="input-wrapper-col-2 grid grid-cols-1 lg:grid-cols-2 lg:gap-10 gap-5 mb-3">
+							<div class="form-item space-y-1">
+								<label for="fname">First Name</label>
+								<input type="text" name="fname" id="fname" placeholder="John" />
+							</div>
+							<div class="form-item space-y-1">
+								<label for="lname">First Name</label>
+								<input type="text" name="lname" id="lname" placeholder="Doe" />
+							</div>
+						</div>
+						<div class="input-wrapper-col-2 grid grid-cols-1 lg:grid-cols-2 lg:gap-10 gap-5 mb-3">
+							<div class="form-item space-y-1">
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" placeholder="johndoe@gmail.com" />
+							</div>
+							<div class="form-item space-y-1">
+								<label for="phone">First Name</label>
+								<input type="tel" name="phone" id="phone" placeholder="+254 712 456 678" />
+							</div>
+						</div>
+						<div class="form-item space-y-1 mb-3">
+							<label for="country">Country</label>
+							<select name="country" id="country">
+								<option value=""></option>
+								<option value="Kenya">Kenya</option>
+								<option value="Uganda">Uganda</option>
+								<option value="Tanzania">Tanzania</option>
+							</select>
+						</div>
+						<div class="form-item space-y-1 mb-3">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" cols="30" rows="10"></textarea>
+						</div>
+						<button type="submit" class="flex items-center">
+							Submit <img src="./assets/images/arrow-circle-light.png" alt="arrow-circle" />
+						</button>
+					</form>
+				</div>
+			</section>
+
+			<!--Other Services-->
+			<section id="other-locations">
+				<div class="container">
+					<div class="filter-section flex justify-between items-end">
+						<h2>Other Locations</h2>
+
+						<div class="filter-items flex items-center">
+							<form class="lg:mr-4 mr-2">
+								<input type="search" name="search" id="search" placeholder="Search..." />
+							</form>
+
+							<div class="items flex items-center">
+								<span class="item flex items-center">
+									<p class="mr-2">Country</p>
+									<i class="fas fa-angle-down"></i>
+								</span>
+								<span class="item flex items-center mx-3">
+									<p class="mr-2">County</p>
+									<i class="fas fa-angle-down"></i>
+								</span>
+								<span class="item flex items-center">
+									<p>Filter</p>
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="locations grid grid-cols-1 lg:grid-cols-5 md:grid-cols-3 lg:gap-4 gap-2">
+						<div class="location flex flex-col lg:mt-6 mt-4">
+							<h6>Mwiki</h6>
+							<div class="space-y-2 my-2">
+								<span class="ct-item flex items-center space-x-2">
+									<img src="./assets/images/mi_email.png" alt="email" />
+									<p>info@equityafia.co.ke</p>
+								</span>
+								<span class="ct-item flex items-center space-x-2">
+									<img src="./assets/images/mingcute_phone-add-line.png" alt="phone" />
+									<p>+254 765 100 000</p>
+								</span>
+							</div>
+							<a href="#" class="self-end">
+								<img src="./assets/images/mingcute_arrow-up-line.png" alt="arrow" />
+							</a>
+						</div>
+
+						<div class="location flex flex-col lg:mt-6 mt-4">
+							<h6>Kenyatta</h6>
+							<div class="space-y-2 my-2">
+								<span class="ct-item flex items-center space-x-2">
+									<img src="./assets/images/mi_email.png" alt="email" />
+									<p>info@equityafia.co.ke</p>
+								</span>
+								<span class="ct-item flex items-center space-x-2">
+									<img src="./assets/images/mingcute_phone-add-line.png" alt="phone" />
+									<p>+254 765 100 000</p>
+								</span>
+							</div>
+							<a href="#" class="self-end">
+								<img src="./assets/images/mingcute_arrow-up-line.png" alt="arrow" />
+							</a>
+						</div>
+
+						<div class="location flex flex-col lg:mt-6 mt-4">
+							<h6>Ruiru II</h6>
+							<div class="space-y-2 my-2">
+								<span class="ct-item flex items-center space-x-2">
+									<img src="./assets/images/mi_email.png" alt="email" />
+									<p>info@equityafia.co.ke</p>
+								</span>
+								<span class="ct-item flex items-center space-x-2">
+									<img src="./assets/images/mingcute_phone-add-line.png" alt="phone" />
+									<p>+254 765 100 000</p>
+								</span>
+							</div>
+							<a href="#" class="self-end">
+								<img src="./assets/images/mingcute_arrow-up-line.png" alt="arrow" />
+							</a>
+						</div>
+
+						<div class="location flex flex-col lg:mt-6 mt-4">
+							<h6>Homabay</h6>
+							<div class="space-y-2 my-2">
+								<span class="ct-item flex items-center space-x-2">
+									<img src="./assets/images/mi_email.png" alt="email" />
+									<p>info@equityafia.co.ke</p>
+								</span>
+								<span class="ct-item flex items-center space-x-2">
+									<img src="./assets/images/mingcute_phone-add-line.png" alt="phone" />
+									<p>+254 765 100 000</p>
+								</span>
+							</div>
+							<a href="#" class="self-end">
+								<img src="./assets/images/mingcute_arrow-up-line.png" alt="arrow" />
+							</a>
+						</div>
+
+						<div class="location flex flex-col lg:mt-6 mt-4">
+							<h6>Narok</h6>
+							<div class="space-y-2 my-2">
+								<span class="ct-item flex items-center space-x-2">
+									<img src="./assets/images/mi_email.png" alt="email" />
+									<p>info@equityafia.co.ke</p>
+								</span>
+								<span class="ct-item flex items-center space-x-2">
+									<img src="./assets/images/mingcute_phone-add-line.png" alt="phone" />
+									<p>+254 765 100 000</p>
+								</span>
+							</div>
+							<a href="#" class="self-end">
+								<img src="./assets/images/mingcute_arrow-up-line.png" alt="arrow" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 
 		<!--Footer-->
