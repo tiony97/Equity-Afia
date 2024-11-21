@@ -264,3 +264,95 @@
 		}
 	}
 }
+
+/* Responsive layout for tablet devices */
+@media (max-width: 1024px) {
+	#career-intro {
+		padding: 2em 0;
+		.container {
+			.reasons {
+				.reason {
+					min-height: 165px;
+					.reason-icon {
+						width: 50px;
+						height: 50px;
+					}
+					h6 {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	#work {
+		min-height: 450px;
+		.overlay {
+			background: linear-gradient(90deg, #9a3821 100%, rgba(154, 56, 33, 0) 100%);
+			opacity: 0.8;
+			z-index: 1;
+		}
+		.play-btn {
+			top: 80%;
+			right: 78%;
+			img {
+				width: 50px;
+				height: 50px;
+			}
+			p {
+				font-size: 16px;
+				line-height: 22px;
+			}
+		}
+		.container {
+			h2 {
+				width: 100%;
+			}
+			p {
+				width: 100%;
+			}
+		}
+	}
+	#vacancies {
+		padding: 2em 0;
+		.container {
+			.filter-section {
+				.desc {
+					width: 100%;
+				}
+				.filter-items {
+					h6 {
+						font-size: 16px;
+						margin: 0.5em 0;
+					}
+					span {
+						padding: 6px 12px;
+						&:last-of-type {
+							margin-left: 0.5em;
+						}
+					}
+				}
+			}
+
+			.vacancy-grid {
+				.vacancy {
+					width: 100%;
+					min-height: 130px;
+					padding: 0.5em;
+					h6 {
+						font-size: 18px;
+						line-height: 23px;
+					}
+					span {
+						img {
+							width: 18px;
+							height: 18px;
+						}
+						p {
+							font-weight: 700;
+						}
+					}
+				}
+			}
+		}
+	}
+}

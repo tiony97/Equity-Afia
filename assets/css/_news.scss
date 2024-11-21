@@ -84,3 +84,29 @@
 		}
 	}
 }
+
+/* Responsive layout for tablet devices */
+@media (max-width: 1024px) {
+	#news-posts {
+		padding: 2em 0;
+		.container {
+			.news-grid {
+				margin-top: 1em;
+				.post {
+					.image-wrapper {
+						height: 200px;
+					}
+					.content {
+						height: 180px;
+						h6 {
+							font-size: 14px;
+						}
+						p {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -71,3 +71,32 @@
 		}
 	}
 }
+
+/* Responsive layout for tablet devices */
+@media (max-width: 1024px) {
+	#partner-grid {
+		padding: 2em 0;
+		.container {
+			.filter-section {
+				.intro {
+					width: 100%;
+				}
+				.filter-items {
+					h6 {
+						font-size: 18px;
+						margin-bottom: 0.5em;
+					}
+					span {
+						padding: 6px 12px;
+					}
+				}
+			}
+
+			.partners {
+				img {
+					height: 200px;
+				}
+			}
+		}
+	}
+}
