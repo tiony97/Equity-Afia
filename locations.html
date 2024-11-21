@@ -139,7 +139,9 @@
 		<!--Page Content-->
 		<main>
 			<!--Common Banner-->
-			<section id="location-banner" class="relative flex items-start justify-between">
+			<section
+				id="location-banner"
+				class="relative flex flex-col lg:flex-row md:flex-row lg:items-start lg:justify-between">
 				<div class="overlay absolute top-0 left-0 w-full h-full"></div>
 				<div class="content" style="z-index: 99">
 					<h2 style="z-index: 5" class="lg:mb-4 mb-2">Our Presence in Kenya</h2>
@@ -161,7 +163,7 @@
 
 			<!--Stats-->
 			<section id="location-stats">
-				<div class="container grid lg:grid-cols-4 gap-4">
+				<div class="container grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-4">
 					<div class="stat flex flex-col justify-between relative p-2">
 						<img
 							src="./assets/images/footer-bg.jpeg"
@@ -224,7 +226,8 @@
 			<!--Services Slider-->
 			<section id="location-services">
 				<div class="container">
-					<div class="title w-full flex items-center justify-between mb-4">
+					<div
+						class="title w-full flex flex-col lg:flex-row md:flex-row lg:items-center lg:justify-between mb-4">
 						<div class="content space-y-2">
 							<h5>QUALITY AFFORDABLE HEALTHCARE FOR ALL</h5>
 							<h2>Our Services</h2>
@@ -407,7 +410,8 @@
 			<!--Wellness Section-->
 			<section id="wellness">
 				<div class="container">
-					<div class="title w-full flex items-center justify-between mb-4">
+					<div
+						class="title w-full flex flex-col lg:flex-row md:flex-row lg:items-center lg:justify-between mb-4">
 						<div class="content space-y-2">
 							<h2>Health & Wellness Tips</h2>
 							<p>
@@ -462,7 +466,9 @@
 			</section>
 
 			<!--Location Map Section-->
-			<section id="location-map" class="flex items-start justify-between">
+			<section
+				id="location-map"
+				class="flex flex-col lg:flex-row md:flex-row items-start justify-between">
 				<div class="content w-full lg:w-1/2 md:w-1/2">
 					<h5>QUALITY AFFORDABLE HEALTHCARE FOR ALL</h5>
 					<h2 class="mt-1">Our Locations in Kenya</h2>
@@ -471,12 +477,13 @@
 						nunc elementum euismod enim et ac elementum at. Ultricies porttitor
 					</p>
 
-					<div class="filter-items flex items-center justify-between lg:mt-8 mt-4">
+					<div
+						class="filter-items flex flex-col lg:flex-row md:flex-row lg:items-center md:items-center justify-between lg:mt-8 mt-4">
 						<form class="lg:mr-4 mr-2">
 							<input type="search" name="search" id="search" placeholder="Search..." />
 						</form>
 
-						<div class="items flex items-center">
+						<div class="items flex items-center justify-between lg:justify-start">
 							<span class="item flex items-center">
 								<p class="mr-2">By Countries</p>
 								<i class="fas fa-angle-down"></i>
@@ -646,6 +653,7 @@
 						<span class="link flex items-center justify-center">4</span>
 					</div>
 				</div>
+
 				<div class="map w-full lg:w-1/2 md:w-1/2">
 					<img src="./assets/images/locations-map.png" alt="map-image" />
 				</div>
@@ -654,7 +662,8 @@
 			<!--How To Pay Section-->
 			<section id="how-to-pay">
 				<div class="container">
-					<div class="title w-full flex items-center justify-between mb-4">
+					<div
+						class="title w-full flex flex-col lg:flex-row md:flex-row lg:items-center lg:justify-between lg:mb-8 mb-5">
 						<div class="content space-y-2">
 							<h2>Pay Your Way</h2>
 							<p>payment options for services received at Equity Afia medical centres in Kenya.</p>
@@ -669,8 +678,60 @@
 					<!--Payment Slider-->
 					<div class="pay-swiper">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide pay"></div>
+							<div class="swiper-slide pay flex flex-col items-center justify-center">
+								<img src="./assets/images/mobile-1.png" alt="mobile" />
+								<p class="mt-1 capitalize">Mobile Money</p>
+							</div>
+							<div class="swiper-slide pay flex flex-col items-center justify-center">
+								<img src="./assets/images/mobile-2.png" alt="mobile" />
+								<p class="mt-1 capitalize">Equity Mobile</p>
+							</div>
+							<div class="swiper-slide pay flex flex-col items-center justify-center">
+								<img src="./assets/images/card-transfer-linear.png" alt="mobile" />
+								<p class="mt-1 capitalize">Direct Fund Transfer</p>
+							</div>
+							<div class="swiper-slide pay flex flex-col items-center justify-center">
+								<img src="./assets/images/health-and-safety-outline.png" alt="mobile" />
+								<p class="mt-1 capitalize">NHIF</p>
+							</div>
+							<div class="swiper-slide pay flex flex-col items-center justify-center">
+								<img src="./assets/images/health-linear.png" alt="mobile" />
+								<p class="mt-1 capitalize">Private Insurance</p>
+							</div>
+							<div class="swiper-slide pay flex flex-col items-center justify-center">
+								<img src="./assets/images/card-transfer-linear.png" alt="mobile" />
+								<p class="mt-1 capitalize">Direct Fund Transfer</p>
+							</div>
+							<div class="swiper-slide pay flex flex-col items-center justify-center">
+								<img src="./assets/images/health-and-safety-outline.png" alt="mobile" />
+								<p class="mt-1 capitalize">NHIF</p>
+							</div>
 						</div>
+
+						<!-- Pagination and Navigation -->
+						<div class="swiper-button-prev"><i class="fas fa-arrow-left-long"></i></div>
+						<div class="swiper-button-next"><i class="fas fa-arrow-right-long"></i></div>
+					</div>
+				</div>
+			</section>
+
+			<!--Location CTA-->
+			<section id="location-cta">
+				<img
+					src="./assets/images/location-cta-image.jpg"
+					alt="footer-bg-image"
+					class="bg-image absolute top-0 left-0 w-full h-full" />
+				<div class="overlay absolute top-0 left-0 w-full h-full"></div>
+
+				<div class="container flex items-center justify-end">
+					<div class="content">
+						<h2>Your Feedback Matters</h2>
+						<p class="mt-2">
+							We use your feedback to continuously improve our service delivery to you - Our clients
+						</p>
+						<a href="#" class="btn-sm about-us flex items-center mt-4"
+							>Leave Feedback <img src="./assets/images/arrow-circle-accent.png" alt="arrow-circle"
+						/></a>
 					</div>
 				</div>
 			</section>

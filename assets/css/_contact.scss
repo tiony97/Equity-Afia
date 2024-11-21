@@ -168,3 +168,54 @@
 		}
 	}
 }
+
+/* Responsive layout for Mobile devices */
+@media (max-width: 768px) {
+	#other-locations {
+		min-height: 250px;
+		.container {
+			.filter-section {
+				h2 {
+					width: 100%;
+				}
+				.filter-items {
+					form {
+						height: 35px;
+						width: 100%;
+						margin-bottom: 1em;
+						input {
+							font-size: 16px;
+							line-height: 22px;
+							&::placeholder {
+								font-size: 16px;
+							}
+						}
+					}
+					span {
+						padding: 6px 12px;
+					}
+				}
+			}
+			.locations {
+				.location {
+					h6 {
+						font-size: 20px;
+						line-height: 27.6px;
+					}
+					.ct-item {
+						img {
+							width: 24px;
+							height: 24px;
+						}
+					}
+					a {
+						img {
+							width: 30px;
+							height: 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
