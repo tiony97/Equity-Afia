@@ -127,6 +127,13 @@ button {
   scale: 0.8;
 }
 
+/* Add this new class */
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
 /* COMMON SECTIONS */
 #accesibility-btn {
   position: fixed;
@@ -2290,6 +2297,65 @@ footer .footer-bar .container .fb-links a:last-of-type::after {
   }
 }
 /* CAREERS PAGE STYLES */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  overflow-y: auto;
+}
+.modal-overlay .modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 25px;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.modal-overlay .modal-content .close-modal {
+  position: absolute;
+  top: 1em;
+  right: 25px;
+  cursor: pointer;
+}
+.modal-overlay .modal-content .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.modal-overlay .modal-content .modal-header h2 {
+  font-size: 28px;
+  color: #282828;
+}
+.modal-overlay .modal-content .modal-body h4 {
+  color: #282828;
+}
+.modal-overlay .modal-content .modal-body .job-details span p {
+  font-weight: 700;
+  color: #282828;
+}
+.modal-overlay .modal-content .modal-body .qualifications span {
+  color: #282828 !important;
+  margin-bottom: 8px;
+}
+.modal-overlay .modal-content .modal-body .qualifications span:last-of-type {
+  margin-bottom: 0;
+}
+.modal-overlay .modal-content .modal-body p {
+  color: #282828 !important;
+  text-wrap: wrap;
+}
+.modal-overlay .modal-content .modal-body p span {
+  color: var(--secondary-accent-color);
+}
+
 #career-intro {
   padding: 3em 0;
 }
@@ -2344,8 +2410,11 @@ footer .footer-bar .container .fb-links a:last-of-type::after {
 }
 
 #work {
+  height: -moz-fit-content;
+  height: fit-content;
   min-height: 370px;
   padding-top: 2em;
+  padding-bottom: 2em;
 }
 #work .bg-image {
   z-index: 0;
@@ -2394,6 +2463,24 @@ footer .footer-bar .container .fb-links a:last-of-type::after {
   position: relative;
   z-index: 3 !important;
   width: 50%;
+}
+#work .container button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3 !important;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px 20px;
+  background-color: var(--secondary-accent-color);
+  color: var(--background-color);
+  transition: all 0.3s ease-in-out;
+}
+#work .container button:hover {
+  background-color: var(--primary-accent-color);
 }
 
 #vacancies {
@@ -2449,6 +2536,49 @@ footer .footer-bar .container .fb-links a:last-of-type::after {
 
 /* Responsive layout for Mobile devices */
 @media (max-width: 768px) {
+  .modal-overlay .modal-content {
+    margin: 5% auto;
+    padding: 25px;
+    width: 90%;
+  }
+  .modal-overlay .modal-content .close-modal {
+    top: 1em;
+    right: 20px;
+  }
+  .modal-overlay .modal-content .modal-header h2 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #282828;
+  }
+  .modal-overlay .modal-content .modal-body h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .modal-overlay .modal-content .modal-body .job-details span p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #282828 !important;
+  }
+  .modal-overlay .modal-content .modal-body .qualifications span {
+    font-size: 15px;
+    color: #282828 !important;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .modal-overlay .modal-content .modal-body .qualifications span img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .modal-overlay .modal-content .modal-body .qualifications span:last-of-type {
+    margin-bottom: 0;
+  }
+  .modal-overlay .modal-content .modal-body p {
+    color: #282828 !important;
+    text-wrap: wrap;
+  }
+  .modal-overlay .modal-content .modal-body p span {
+    color: var(--secondary-accent-color);
+  }
   #career-intro {
     padding: 2em 0;
   }
