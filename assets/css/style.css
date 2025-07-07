@@ -2528,7 +2528,7 @@ footer .footer-bar .container .fb-links a:last-of-type::after {
 #vacancies .container .vacancy-grid .vacancy span p {
   font-weight: 700;
 }
-#vacancies .container .vacancy-grid .vacancy a {
+#vacancies .container .vacancy-grid .vacancy button {
   background-color: var(--primary-accent-color);
   color: var(--background-color);
   padding: 4px 8px;

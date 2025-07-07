@@ -171,25 +171,26 @@ $(document).ready(function () {
   });
 });
 
-// Career page popup modal
+// Career page popup modals
 $(document).ready(function () {
-  // Open modal when "more" button is clicked
-  $("#more").click(function () {
-    $("#job-modal").fadeIn();
-    $("body").addClass("no-scroll"); // Add no-scroll class to body
+  // Open modal when any details button is clicked
+  $("#vacancies .vacancy .details-btn").click(function () {
+    const modalId = $(this).closest("#vacancies .vacancy").data("modal");
+    $("#" + modalId).fadeIn();
+    $("body").addClass("no-scroll");
   });
 
   // Close modal when X is clicked
   $(".close-modal").click(function () {
-    $("#job-modal").fadeOut();
-    $("body").removeClass("no-scroll"); // Remove no-scroll class
+    $(this).closest(".modal-overlay").fadeOut();
+    $("body").removeClass("no-scroll");
   });
 
   // Close modal when clicking outside the content
   $(window).click(function (event) {
-    if ($(event.target).is("#job-modal")) {
-      $("#job-modal").fadeOut();
-      $("body").removeClass("no-scroll"); // Remove no-scroll class
+    if ($(event.target).hasClass("modal-overlay")) {
+      $(".modal-overlay").fadeOut();
+      $("body").removeClass("no-scroll");
     }
   });
 });
