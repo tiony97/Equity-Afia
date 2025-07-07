@@ -173,24 +173,50 @@ $(document).ready(function () {
 
 // Career page popup modals
 $(document).ready(function () {
+  // Store scroll position before opening modal
+  let scrollPosition = 0;
+
   // Open modal when any details button is clicked
-  $("#vacancies .vacancy .details-btn").click(function () {
+  $("#vacancies .vacancy .details-btn").click(function (e) {
+    e.preventDefault(); // Prevent default button behavior
+    scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
     const modalId = $(this).closest("#vacancies .vacancy").data("modal");
     $("#" + modalId).fadeIn();
-    $("body").addClass("no-scroll");
+    // Apply no-scroll by adding padding instead of position:fixed
+    $("body").css({
+      overflow: "hidden",
+      position: "relative",
+      top: `-${scrollPosition}px`,
+    });
   });
 
   // Close modal when X is clicked
-  $(".close-modal").click(function () {
+  $(".close-modal").click(function (e) {
+    e.preventDefault(); // Prevent default link behavior
     $(this).closest(".modal-overlay").fadeOut();
-    $("body").removeClass("no-scroll");
+    // Restore scrolling and position
+    $("body").css({
+      overflow: "",
+      position: "",
+      top: "",
+    });
+
+    window.scrollTo(0, scrollPosition);
   });
 
   // Close modal when clicking outside the content
   $(window).click(function (event) {
     if ($(event.target).hasClass("modal-overlay")) {
+      event.preventDefault();
       $(".modal-overlay").fadeOut();
-      $("body").removeClass("no-scroll");
+      $("body").css({
+        overflow: "",
+        position: "",
+        top: "",
+      });
+
+      window.scrollTo(0, scrollPosition);
     }
   });
 });

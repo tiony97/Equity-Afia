@@ -25,10 +25,7 @@ body {
   font-family: "Open Sans", sans-serif;
   //font-family: Arial, sans-serif;
 }
-body.no-scroll {
-  overflow: hidden;
-  transition: all 0.3s ease; // Optional: control smoothness of scroll lock
-}
+
 ::-webkit-scrollbar {
   width: 8px;
   background: transparent;
@@ -120,14 +117,8 @@ button {
     margin-left: 0.5em;
   }
   &:hover {
-    scale: 0.8;
+    scale: 0.95;
   }
-}
-/* Add this new class */
-.no-scroll {
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
 }
 
 /* COMMON SECTIONS */
