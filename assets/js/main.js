@@ -220,3 +220,33 @@ $(document).ready(function () {
     }
   });
 });
+
+// Highlight active menu link based on current page
+$(document).ready(function () {
+  // Get current page path without extension
+  var currentPath = window.location.pathname
+    .replace(".html", "")
+    .split("/")
+    .pop();
+
+  // Loop through each menu link
+  $(".menu-link a").each(function () {
+    var linkPath = $(this).attr("href").replace(".html", "").split("/").pop();
+
+    // Check if link path matches current page path
+    if (
+      linkPath === currentPath ||
+      (currentPath === "" && linkPath === "index")
+    ) {
+      $(this).addClass("active");
+
+      // If it's in a submenu, also highlight the parent
+      if ($(this).closest(".sub-menu").length) {
+        $(this)
+          .closest(".menu-item-has-children")
+          .find("> a")
+          .addClass("active");
+      }
+    }
+  });
+});
