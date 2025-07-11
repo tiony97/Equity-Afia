@@ -3594,8 +3594,10 @@ footer .footer-bar .container .fb-links a:last-of-type::after {
   z-index: 0;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 0% 50% !important;
-     object-position: 0% 50% !important;
+  -o-object-position: 80% 50% !important;
+     object-position: 80% 50% !important;
+  height: 100%;
+  width: 70%;
 }
 #location-cta .overlay {
   background: linear-gradient(276.56deg, #ff9e15 29.18%, rgba(94, 94, 94, 0) 80.92%);
@@ -3806,6 +3808,7 @@ footer .footer-bar .container .fb-links a:last-of-type::after {
   #location-cta .bg-image {
     -o-object-position: center !important;
        object-position: center !important;
+    width: 100%;
   }
   #location-cta .overlay {
     background: linear-gradient(276.56deg, #ff9e15 100%, rgba(94, 94, 94, 0) 80.92%);
@@ -4002,6 +4005,7 @@ footer .footer-bar .container .fb-links a:last-of-type::after {
   #location-cta .bg-image {
     -o-object-position: center !important;
        object-position: center !important;
+    width: 100%;
   }
   #location-cta .overlay {
     background: linear-gradient(276.56deg, #ff9e15 100%, rgba(94, 94, 94, 0) 80.92%);

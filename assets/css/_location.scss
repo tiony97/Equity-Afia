@@ -659,7 +659,9 @@
   .bg-image {
     z-index: 0;
     object-fit: cover;
-    object-position: 0% 50% !important;
+    object-position: 80% 50% !important;
+    height: 100%;
+    width: 70%;
   }
   .overlay {
     background: linear-gradient(
@@ -913,6 +915,7 @@
     height: 400px;
     .bg-image {
       object-position: center !important;
+      width: 100%;
     }
     .overlay {
       background: linear-gradient(
@@ -1154,6 +1157,7 @@
     height: 400px;
     .bg-image {
       object-position: center !important;
+      width: 100%;
     }
     .overlay {
       background: linear-gradient(
