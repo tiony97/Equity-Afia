@@ -172,6 +172,7 @@ $(document).ready(function () {
 });
 
 // Career page popup modals
+/* 
 $(document).ready(function () {
   // Store scroll position before opening modal
   let scrollPosition = 0;
@@ -217,6 +218,28 @@ $(document).ready(function () {
       });
 
       window.scrollTo(0, scrollPosition);
+    }
+  });
+});*/
+
+$(document).ready(function () {
+  // Open modal when any details button is clicked
+  $("#vacancies .vacancy .details-btn").click(function (e) {
+    e.preventDefault();
+    const modalId = $(this).closest("#vacancies .vacancy").data("modal");
+    $("#" + modalId).fadeIn();
+  });
+
+  // Close modal when X is clicked
+  $(".close-modal").click(function (e) {
+    e.preventDefault();
+    $(this).closest(".modal-overlay").fadeOut();
+  });
+
+  // Close modal when clicking outside the content
+  $(window).click(function (event) {
+    if ($(event.target).hasClass("modal-overlay")) {
+      $(".modal-overlay").fadeOut();
     }
   });
 });

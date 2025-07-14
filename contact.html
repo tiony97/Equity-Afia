@@ -1,522 +1,633 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./assets/css/all.min.css" />
-		<link rel="stylesheet" href="./assets/css/tailwind.css" />
-		<link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
-		<link rel="stylesheet" href="./assets/css/fancybox.css" />
-		<link rel="stylesheet" href="./assets/css/style.css" />
-		<link rel="shortcut icon" href="./assets/images/afya_img.png" type="image/x-icon" />
-		<title>Equity Afia</title>
-	</head>
-	<body>
-		<!--Accesibility Button-->
-		<button id="accesibility-btn">
-			<img src="./assets/images/accesibility icon.png" alt="accesibility-icon" />
-		</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/tailwind.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/fancybox.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/afya_img.png"
+      type="image/x-icon"
+    />
+    <title>Equity Afia</title>
+  </head>
+  <body>
+    <!--Accesibility Button-->
+    <button id="accesibility-btn">
+      <img
+        src="./assets/images/accesibility icon.png"
+        alt="accesibility-icon"
+      />
+    </button>
 
-		<!-- Hidden Search Form -->
-		<div id="search-popup" style="display: none">
-			<form action="/search" method="GET">
-				<h2>Search</h2>
-				<input type="text" name="query" placeholder="Enter search term..." required />
-				<button type="submit">Search</button>
-			</form>
-		</div>
+    <!-- Hidden Search Form -->
+    <div id="search-popup" style="display: none">
+      <form action="/search" method="GET">
+        <h2>Search</h2>
+        <input
+          type="text"
+          name="query"
+          placeholder="Enter search term..."
+          required
+        />
+        <button type="submit">Search</button>
+      </form>
+    </div>
 
-		<!--Top Bar Section-->
-		<div class="top-bar flex items-center mb-2">
-			<div class="container flex items-center justify-between">
-				<div class="tb-info flex items-center justify-between w-auto">
-					<div class="item flex items-center">
-						<img src="./assets/images/phone.png" alt="tb-info-image" />
-						<p class="lg:ml-3 ml-2">+254 765 100 000</p>
-					</div>
-					<div class="item flex items-center ml-6">
-						<img src="./assets/images/mail.png" alt="tb-info-image" />
-						<p class="lg:ml-3 ml-2">info@equityafia.co.ke</p>
-					</div>
-				</div>
+    <!--Top Bar Section-->
+    <div class="top-bar flex items-center mb-2">
+      <div class="container flex items-center justify-between">
+        <div class="tb-info flex items-center justify-between w-auto">
+          <div class="item flex items-center">
+            <img src="./assets/images/phone.png" alt="tb-info-image" />
+            <p class="lg:ml-3 ml-2">+254 765 100 000</p>
+          </div>
+          <div class="item flex items-center ml-6">
+            <img src="./assets/images/mail.png" alt="tb-info-image" />
+            <p class="lg:ml-3 ml-2">info@equityafia.co.ke</p>
+          </div>
+        </div>
 
-				<a href="#" class="tb-btn">Locate Medical Centre</a>
-			</div>
-		</div>
+        <a href="#" class="tb-btn">Locate Medical Centre</a>
+      </div>
+    </div>
 
-		<!--Body Overlay-->
-		<div class="body-overlay absolute top-0 left-0 w-full h-full"></div>
+    <!--Body Overlay-->
+    <div class="body-overlay absolute top-0 left-0 w-full h-full"></div>
 
-		<!--Header Section-->
-		<header>
-			<div class="container flex items-center justify-between">
-				<!--Logo-->
-				<a href="/" class="logo"><img src="./assets/images/equity_logo.png" alt="equity_logo" /></a>
+    <!--Header Section-->
+    <header>
+      <div class="container flex items-center justify-between">
+        <!--Logo-->
+        <a href="/" class="logo"
+          ><img src="./assets/images/equity_logo.png" alt="equity_logo"
+        /></a>
 
-				<!--Navigation Menu-->
-				<div class="main-menu lg:-ml-40 md:-ml-40">
-					<ul class="menu-links relative flex items-center list-none">
-						<li class="menu-link"><a href="./services.html">Our Services</a></li>
+        <!--Navigation Menu-->
+        <div class="main-menu lg:-ml-40 md:-ml-40">
+          <ul class="menu-links relative flex items-center list-none">
+            <li class="menu-link">
+              <a href="./services.html">Our Services</a>
+            </li>
 
-						<li class="menu-link menu-item-has-children">
-							<a href="javascript:void(0)">Our Locations</a>
-							<ul class="sub-menu">
-								<li class="menu-link"><a href="./locations.html">Location 1</a></li>
-								<li class="menu-link"><a href="./locations.html">Location 2</a></li>
-							</ul>
-						</li>
+            <li class="menu-link menu-item-has-children">
+              <a href="javascript:void(0)">Our Locations</a>
+              <ul class="sub-menu">
+                <li class="menu-link">
+                  <a href="./locations.html">Location 1</a>
+                </li>
+                <li class="menu-link">
+                  <a href="./locations.html">Location 2</a>
+                </li>
+              </ul>
+            </li>
 
-						<li class="menu-link"><a href="./about.html">About Us</a></li>
+            <li class="menu-link"><a href="./about.html">About Us</a></li>
 
-						<li class="menu-link"><a href="./partners.html">Our Partners</a></li>
+            <li class="menu-link">
+              <a href="./partners.html">Our Partners</a>
+            </li>
 
-						<li class="menu-link menu-item-has-children">
-							<a href="javascript:void(0)">Resources</a>
-							<ul class="sub-menu">
-								<li class="menu-link"><a href="./news.html">News & Media</a></li>
-								<li class="menu-link"><a href="./careers.html">Careers</a></li>
-							</ul>
-						</li>
+            <li class="menu-link menu-item-has-children">
+              <a href="javascript:void(0)">Resources</a>
+              <ul class="sub-menu">
+                <li class="menu-link">
+                  <a href="./news.html">News & Media</a>
+                </li>
+                <li class="menu-link"><a href="./careers.html">Careers</a></li>
+              </ul>
+            </li>
 
-						<li class="menu-link"><a href="./contact.html">Contact Us</a></li>
-					</ul>
-				</div>
+            <li class="menu-link"><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
 
-				<!--Header Links-->
-				<div class="header-links flex items-center">
-					<!--Mobile Menu Toggler-->
-					<div class="menu-toggle">
-						<div class="menu-icon">
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
-					</div>
+        <!--Header Links-->
+        <div class="header-links flex items-center">
+          <!--Mobile Menu Toggler-->
+          <div class="menu-toggle">
+            <div class="menu-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
 
-					<button class="search" id="search-icon">
-						<img src="./assets/images/search.png" alt="search" />
-					</button>
+          <button class="search" id="search-icon">
+            <img src="./assets/images/search.png" alt="search" />
+          </button>
 
-					<button class="translate flex items-center ml-4">
-						<img src="./assets/images/globe.png" alt="globe" />
-						<p class="ml-2">English</p>
-					</button>
-				</div>
-			</div>
-		</header>
+          <button class="translate flex items-center ml-4">
+            <img src="./assets/images/globe.png" alt="globe" />
+            <p class="ml-2">English</p>
+          </button>
+        </div>
+      </div>
+    </header>
 
-		<!--Mobile Menu-->
-		<div class="mobile-menu">
-			<div class="container">
-				<ul class="menu-links relative list-none">
-					<li class="menu-link"><a href="./services.html">Our Services</a></li>
+    <!--Mobile Menu-->
+    <div class="mobile-menu">
+      <div class="container">
+        <ul class="menu-links relative list-none">
+          <li class="menu-link"><a href="./services.html">Our Services</a></li>
 
-					<li class="menu-link menu-item-has-children">
-						<a href="javascript:void(0)">Our Locations</a>
-						<ul class="sub-menu">
-							<li class="menu-link"><a href="./locations.html">Location 1</a></li>
-							<li class="menu-link"><a href="./locations.html">Location 2</a></li>
-						</ul>
-					</li>
+          <li class="menu-link menu-item-has-children">
+            <a href="javascript:void(0)">Our Locations</a>
+            <ul class="sub-menu">
+              <li class="menu-link">
+                <a href="./locations.html">Location 1</a>
+              </li>
+              <li class="menu-link">
+                <a href="./locations.html">Location 2</a>
+              </li>
+            </ul>
+          </li>
 
-					<li class="menu-link"><a href="./about.html">About Us</a></li>
+          <li class="menu-link"><a href="./about.html">About Us</a></li>
 
-					<li class="menu-link"><a href="./partners.html">Our Partners</a></li>
+          <li class="menu-link"><a href="./partners.html">Our Partners</a></li>
 
-					<li class="menu-link menu-item-has-children">
-						<a href="javascript:void(0)">Resources</a>
-						<ul class="sub-menu">
-							<li class="menu-link"><a href="./news.html">News & Media</a></li>
-							<li class="menu-link"><a href="./careers.html">Careers</a></li>
-						</ul>
-					</li>
+          <li class="menu-link menu-item-has-children">
+            <a href="javascript:void(0)">Resources</a>
+            <ul class="sub-menu">
+              <li class="menu-link"><a href="./news.html">News & Media</a></li>
+              <li class="menu-link"><a href="./careers.html">Careers</a></li>
+            </ul>
+          </li>
 
-					<li class="menu-link"><a href="./contact.html">Contact Us</a></li>
-				</ul>
-			</div>
-		</div>
+          <li class="menu-link"><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
 
-		<!--Page Content-->
-		<main>
-			<!--Common Banner-->
-			<section id="common-banner" class="relative">
-				<div class="overlay absolute top-0 left-0 w-full h-full"></div>
+    <!--Page Content-->
+    <main>
+      <!--Common Banner-->
+      <section id="common-banner" class="relative">
+        <div class="overlay absolute top-0 left-0 w-full h-full"></div>
 
-				<div class="container flex items-center justify-between">
-					<div class="content" style="z-index: 99">
-						<h5 style="z-index: 5">YOUR CARING HEALTHCARE PARTNER</h5>
-						<h1 style="z-index: 5" class="mt-2">Contact Us</h1>
-					</div>
-					<div class="image-wrapper">
-						<img
-							src="./assets/images/contact-banner-image.png"
-							alt="about-banner-image"
-							class="banner-image"
-							style="z-index: 5" />
-					</div>
-				</div>
-			</section>
+        <div class="container flex items-center justify-between">
+          <div class="content" style="z-index: 99">
+            <h5 style="z-index: 5">YOUR CARING HEALTHCARE PARTNER</h5>
+            <h1 style="z-index: 5" class="mt-2">Contact Us</h1>
+          </div>
+          <div class="image-wrapper">
+            <img
+              src="./assets/images/contact-banner-image.png"
+              alt="about-banner-image"
+              class="banner-image"
+              style="z-index: 5"
+            />
+          </div>
+        </div>
+      </section>
 
-			<!--Contact Form-->
-			<section id="contact-form">
-				<div class="container grid grid-cols-1 lg:grid-cols-2 lg:gap-10 gap-5">
-					<div class="content">
-						<h2>We’re Always Happy To Hear from You!</h2>
-						<p class="mt-1 lg:w-4/5">
-							Fill out the form and an agent will be in touch with you as soon as possible.
-						</p>
-						<span class="ct-item flex items-center space-x-2 mt-6">
-							<img src="./assets/images/mi_email.png" alt="email" />
-							<p>info@equityafia.co.ke</p>
-						</span>
-						<span class="ct-item flex items-center space-x-2 mt-2">
-							<img src="./assets/images/mingcute_phone-add-line.png" alt="phone" />
-							<p>+254 765 100 000</p>
-						</span>
-						<div class="social flex items-center space-x-2 mt-6">
-							<a href="#"><img src="./assets/images/x.png" alt="x" /></a>
-							<a href="#"><img src="./assets/images/ct-fb.png" alt="x" /></a>
-						</div>
-					</div>
+      <!--Contact Form-->
+      <section id="contact-form">
+        <div class="container grid grid-cols-1 lg:grid-cols-2 lg:gap-10 gap-5">
+          <div class="content">
+            <h2>We’re Always Happy To Hear from You!</h2>
+            <p class="mt-1 lg:w-4/5">
+              Fill out the form and an agent will be in touch with you as soon
+              as possible.
+            </p>
+            <span class="ct-item flex items-center space-x-2 mt-6">
+              <img src="./assets/images/mi_email.png" alt="email" />
+              <p>info@equityafia.co.ke</p>
+            </span>
+            <span class="ct-item flex items-center space-x-2 mt-2">
+              <img
+                src="./assets/images/mingcute_phone-add-line.png"
+                alt="phone"
+              />
+              <p>+254 765 100 000</p>
+            </span>
+            <div class="social flex items-center space-x-2 mt-6">
+              <a href="#"><img src="./assets/images/x.png" alt="x" /></a>
+              <a href="#"><img src="./assets/images/ct-fb.png" alt="x" /></a>
+            </div>
+          </div>
 
-					<form class="ct-form">
-						<div
-							class="input-wrapper-col-2 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 lg:gap-10 gap-5 mb-3">
-							<div class="form-item space-y-1">
-								<label for="fname">First Name</label>
-								<input type="text" name="fname" id="fname" placeholder="John" />
-							</div>
-							<div class="form-item space-y-1">
-								<label for="lname">First Name</label>
-								<input type="text" name="lname" id="lname" placeholder="Doe" />
-							</div>
-						</div>
-						<div
-							class="input-wrapper-col-2 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 lg:gap-10 gap-5 mb-3">
-							<div class="form-item space-y-1">
-								<label for="email">Email</label>
-								<input type="email" name="email" id="email" placeholder="johndoe@gmail.com" />
-							</div>
-							<div class="form-item space-y-1">
-								<label for="phone">First Name</label>
-								<input type="tel" name="phone" id="phone" placeholder="+254 712 456 678" />
-							</div>
-						</div>
-						<div class="form-item space-y-1 mb-3">
-							<label for="country">Country</label>
-							<select name="country" id="country">
-								<option value=""></option>
-								<option value="Kenya">Kenya</option>
-								<option value="Uganda">Uganda</option>
-								<option value="Tanzania">Tanzania</option>
-							</select>
-						</div>
-						<div class="form-item space-y-1 mb-3">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" cols="30" rows="10"></textarea>
-						</div>
-						<button type="submit" class="flex items-center">
-							Submit <img src="./assets/images/arrow-circle-light.png" alt="arrow-circle" />
-						</button>
-					</form>
-				</div>
-			</section>
+          <form class="ct-form">
+            <div
+              class="input-wrapper-col-2 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 lg:gap-10 gap-5 mb-3"
+            >
+              <div class="form-item space-y-1">
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" placeholder="John" />
+              </div>
+              <div class="form-item space-y-1">
+                <label for="lname">First Name</label>
+                <input type="text" name="lname" id="lname" placeholder="Doe" />
+              </div>
+            </div>
+            <div
+              class="input-wrapper-col-2 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 lg:gap-10 gap-5 mb-3"
+            >
+              <div class="form-item space-y-1">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="johndoe@gmail.com"
+                />
+              </div>
+              <div class="form-item space-y-1">
+                <label for="phone">First Name</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="+254 712 456 678"
+                />
+              </div>
+            </div>
+            <div class="form-item space-y-1 mb-3">
+              <label for="country">Country</label>
+              <select name="country" id="country">
+                <option value=""></option>
+                <option value="Kenya">Kenya</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Tanzania">Tanzania</option>
+              </select>
+            </div>
+            <div class="form-item space-y-1 mb-3">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <button type="submit" class="flex items-center">
+              Submit
+              <img
+                src="./assets/images/arrow-circle-light.png"
+                alt="arrow-circle"
+              />
+            </button>
+          </form>
+        </div>
+      </section>
 
-			<!--Other Services-->
-			<section id="other-locations">
-				<div class="container">
-					<div
-						class="filter-section flex flex-col lg:flex-row md:flex-row lg:justify-between md:justify-between lg:items-end">
-						<h2>Other Locations</h2>
+      <!--Other Services-->
+      <section id="other-locations">
+        <div class="container">
+          <div
+            class="filter-section flex flex-col lg:flex-row md:flex-row lg:justify-between md:justify-between lg:items-end"
+          >
+            <h2>Other Locations</h2>
 
-						<div class="filter-items flex flex-col lg:flex-row lg:items-center">
-							<form class="lg:mr-4 mr-2">
-								<input type="search" name="search" id="search" placeholder="Search..." />
-							</form>
+            <div class="filter-items flex flex-col lg:flex-row lg:items-center">
+              <form class="lg:mr-4 mr-2">
+                <input
+                  type="search"
+                  name="search"
+                  id="search"
+                  placeholder="Search..."
+                />
+              </form>
 
-							<div class="items flex items-center">
-								<span class="item flex items-center">
-									<p class="mr-2">Country</p>
-									<i class="fas fa-angle-down"></i>
-								</span>
-								<span class="item flex items-center mx-3">
-									<p class="mr-2">County</p>
-									<i class="fas fa-angle-down"></i>
-								</span>
-								<span class="item flex items-center">
-									<p>Filter</p>
-								</span>
-							</div>
-						</div>
-					</div>
+              <div class="items flex items-center">
+                <span class="item flex items-center">
+                  <p class="mr-2">Country</p>
+                  <i class="fas fa-angle-down"></i>
+                </span>
+                <span class="item flex items-center mx-3">
+                  <p class="mr-2">County</p>
+                  <i class="fas fa-angle-down"></i>
+                </span>
+                <span class="item flex items-center">
+                  <p>Filter</p>
+                </span>
+              </div>
+            </div>
+          </div>
 
-					<div class="locations grid grid-cols-1 lg:grid-cols-5 md:grid-cols-3 lg:gap-4 gap-2">
-						<div class="location flex flex-col lg:mt-6 mt-4">
-							<h6>Mwiki</h6>
-							<div class="space-y-2 my-2">
-								<span class="ct-item flex items-center space-x-2">
-									<img src="./assets/images/mi_email.png" alt="email" />
-									<p>info@equityafia.co.ke</p>
-								</span>
-								<span class="ct-item flex items-center space-x-2">
-									<img src="./assets/images/mingcute_phone-add-line.png" alt="phone" />
-									<p>+254 765 100 000</p>
-								</span>
-							</div>
-							<a href="#" class="self-end">
-								<img src="./assets/images/mingcute_arrow-up-line.png" alt="arrow" />
-							</a>
-						</div>
+          <div
+            class="locations grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 lg:gap-4 gap-2"
+          >
+            <div class="location flex flex-col lg:mt-6 mt-4">
+              <h6>Mwiki</h6>
+              <div class="space-y-2 my-2">
+                <span class="ct-item flex items-center space-x-2">
+                  <img src="./assets/images/mi_email.png" alt="email" />
+                  <p>info@equityafia.co.ke</p>
+                </span>
+                <span class="ct-item flex items-center space-x-2">
+                  <img
+                    src="./assets/images/mingcute_phone-add-line.png"
+                    alt="phone"
+                  />
+                  <p>+254 765 100 000</p>
+                </span>
+              </div>
+              <a href="#" class="self-end">
+                <img
+                  src="./assets/images/mingcute_arrow-up-line.png"
+                  alt="arrow"
+                />
+              </a>
+            </div>
 
-						<div class="location flex flex-col lg:mt-6 mt-4">
-							<h6>Kenyatta</h6>
-							<div class="space-y-2 my-2">
-								<span class="ct-item flex items-center space-x-2">
-									<img src="./assets/images/mi_email.png" alt="email" />
-									<p>info@equityafia.co.ke</p>
-								</span>
-								<span class="ct-item flex items-center space-x-2">
-									<img src="./assets/images/mingcute_phone-add-line.png" alt="phone" />
-									<p>+254 765 100 000</p>
-								</span>
-							</div>
-							<a href="#" class="self-end">
-								<img src="./assets/images/mingcute_arrow-up-line.png" alt="arrow" />
-							</a>
-						</div>
+            <div class="location flex flex-col lg:mt-6 mt-4">
+              <h6>Kenyatta</h6>
+              <div class="space-y-2 my-2">
+                <span class="ct-item flex items-center space-x-2">
+                  <img src="./assets/images/mi_email.png" alt="email" />
+                  <p>info@equityafia.co.ke</p>
+                </span>
+                <span class="ct-item flex items-center space-x-2">
+                  <img
+                    src="./assets/images/mingcute_phone-add-line.png"
+                    alt="phone"
+                  />
+                  <p>+254 765 100 000</p>
+                </span>
+              </div>
+              <a href="#" class="self-end">
+                <img
+                  src="./assets/images/mingcute_arrow-up-line.png"
+                  alt="arrow"
+                />
+              </a>
+            </div>
 
-						<div class="location flex flex-col lg:mt-6 mt-4">
-							<h6>Ruiru II</h6>
-							<div class="space-y-2 my-2">
-								<span class="ct-item flex items-center space-x-2">
-									<img src="./assets/images/mi_email.png" alt="email" />
-									<p>info@equityafia.co.ke</p>
-								</span>
-								<span class="ct-item flex items-center space-x-2">
-									<img src="./assets/images/mingcute_phone-add-line.png" alt="phone" />
-									<p>+254 765 100 000</p>
-								</span>
-							</div>
-							<a href="#" class="self-end">
-								<img src="./assets/images/mingcute_arrow-up-line.png" alt="arrow" />
-							</a>
-						</div>
+            <div class="location flex flex-col lg:mt-6 mt-4">
+              <h6>Ruiru II</h6>
+              <div class="space-y-2 my-2">
+                <span class="ct-item flex items-center space-x-2">
+                  <img src="./assets/images/mi_email.png" alt="email" />
+                  <p>info@equityafia.co.ke</p>
+                </span>
+                <span class="ct-item flex items-center space-x-2">
+                  <img
+                    src="./assets/images/mingcute_phone-add-line.png"
+                    alt="phone"
+                  />
+                  <p>+254 765 100 000</p>
+                </span>
+              </div>
+              <a href="#" class="self-end">
+                <img
+                  src="./assets/images/mingcute_arrow-up-line.png"
+                  alt="arrow"
+                />
+              </a>
+            </div>
 
-						<div class="location flex flex-col lg:mt-6 mt-4">
-							<h6>Homabay</h6>
-							<div class="space-y-2 my-2">
-								<span class="ct-item flex items-center space-x-2">
-									<img src="./assets/images/mi_email.png" alt="email" />
-									<p>info@equityafia.co.ke</p>
-								</span>
-								<span class="ct-item flex items-center space-x-2">
-									<img src="./assets/images/mingcute_phone-add-line.png" alt="phone" />
-									<p>+254 765 100 000</p>
-								</span>
-							</div>
-							<a href="#" class="self-end">
-								<img src="./assets/images/mingcute_arrow-up-line.png" alt="arrow" />
-							</a>
-						</div>
+            <div class="location flex flex-col lg:mt-6 mt-4">
+              <h6>Homabay</h6>
+              <div class="space-y-2 my-2">
+                <span class="ct-item flex items-center space-x-2">
+                  <img src="./assets/images/mi_email.png" alt="email" />
+                  <p>info@equityafia.co.ke</p>
+                </span>
+                <span class="ct-item flex items-center space-x-2">
+                  <img
+                    src="./assets/images/mingcute_phone-add-line.png"
+                    alt="phone"
+                  />
+                  <p>+254 765 100 000</p>
+                </span>
+              </div>
+              <a href="#" class="self-end">
+                <img
+                  src="./assets/images/mingcute_arrow-up-line.png"
+                  alt="arrow"
+                />
+              </a>
+            </div>
 
-						<div class="location flex flex-col lg:mt-6 mt-4">
-							<h6>Narok</h6>
-							<div class="space-y-2 my-2">
-								<span class="ct-item flex items-center space-x-2">
-									<img src="./assets/images/mi_email.png" alt="email" />
-									<p>info@equityafia.co.ke</p>
-								</span>
-								<span class="ct-item flex items-center space-x-2">
-									<img src="./assets/images/mingcute_phone-add-line.png" alt="phone" />
-									<p>+254 765 100 000</p>
-								</span>
-							</div>
-							<a href="#" class="self-end">
-								<img src="./assets/images/mingcute_arrow-up-line.png" alt="arrow" />
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
+            <div class="location flex flex-col lg:mt-6 mt-4">
+              <h6>Narok</h6>
+              <div class="space-y-2 my-2">
+                <span class="ct-item flex items-center space-x-2">
+                  <img src="./assets/images/mi_email.png" alt="email" />
+                  <p>info@equityafia.co.ke</p>
+                </span>
+                <span class="ct-item flex items-center space-x-2">
+                  <img
+                    src="./assets/images/mingcute_phone-add-line.png"
+                    alt="phone"
+                  />
+                  <p>+254 765 100 000</p>
+                </span>
+              </div>
+              <a href="#" class="self-end">
+                <img
+                  src="./assets/images/mingcute_arrow-up-line.png"
+                  alt="arrow"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-		<!--Footer-->
-		<footer>
-			<div class="footer-content">
-				<img
-					src="./assets/images/footer-bg.jpeg"
-					alt="footer-bg-image"
-					class="bg-image absolute top-0 left-0 w-full h-full" />
-				<div class="overlay absolute top-0 left-0 w-full h-full"></div>
+    <!--Footer-->
+    <footer>
+      <div class="footer-content">
+        <img
+          src="./assets/images/footer-bg.jpeg"
+          alt="footer-bg-image"
+          class="bg-image absolute top-0 left-0 w-full h-full"
+        />
+        <div class="overlay absolute top-0 left-0 w-full h-full"></div>
 
-				<div class="container">
-					<h1 class="mb-4">Have an Inquiry?<span>Contact Us</span></h1>
+        <div class="container">
+          <h1 class="mb-4">Have an Inquiry?<span>Contact Us</span></h1>
 
-					<div class="fc-grid grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-0">
-						<!--FT Contact-->
-						<div class="ft-contact">
-							<img src="./assets/images/equity_logo_2.png" alt="light-logo" class="ft-logo" />
+          <div
+            class="fc-grid grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-0"
+          >
+            <!--FT Contact-->
+            <div class="ft-contact">
+              <img
+                src="./assets/images/equity_logo_2.png"
+                alt="light-logo"
+                class="ft-logo"
+              />
 
-							<div class="mail flex items-center mb-2">
-								<img src="./assets/images/email.png" alt="mail" />
-								<p class="ml-2">info@equityafia.co.ke</p>
-							</div>
-							<div class="call flex items-center mb-4">
-								<img src="./assets/images/phone-add-line.png" alt="mail" />
-								<p class="ml-2">+254 765 100 000</p>
-							</div>
+              <div class="mail flex items-center mb-2">
+                <img src="./assets/images/email.png" alt="mail" />
+                <p class="ml-2">info@equityafia.co.ke</p>
+              </div>
+              <div class="call flex items-center mb-4">
+                <img src="./assets/images/phone-add-line.png" alt="mail" />
+                <p class="ml-2">+254 765 100 000</p>
+              </div>
 
-							<div class="block">
-								<p class="font-bold">Follow our Socials</p>
-								<div class="flex mt-2">
-									<a href="#" class="social"
-										><img src="./assets/images/twitter.png" alt="social"
-									/></a>
-									<a href="#" class="social mx-2"
-										><img src="./assets/images/fb.png" alt="social"
-									/></a>
-									<a href="#" class="social"><img src="./assets/images/ig.png" alt="social" /></a>
-								</div>
-							</div>
-						</div>
+              <div class="block">
+                <p class="font-bold">Follow our Socials</p>
+                <div class="flex mt-2">
+                  <a href="#" class="social"
+                    ><img src="./assets/images/twitter.png" alt="social"
+                  /></a>
+                  <a href="#" class="social mx-2"
+                    ><img src="./assets/images/fb.png" alt="social"
+                  /></a>
+                  <a href="#" class="social"
+                    ><img src="./assets/images/ig.png" alt="social"
+                  /></a>
+                </div>
+              </div>
+            </div>
 
-						<!--FT Links-->
-						<div class="ft-links flex flex-col justify-between">
-							<div class="links block">
-								<h6>Learn More</h6>
-								<a href="#" class="link flex items-center">
-									<img src="./assets/images/check-all.png" alt="check-all" />
-									<p class="ml-2">About Us</p>
-								</a>
-								<a href="#" class="link flex items-center">
-									<img src="./assets/images/check-all.png" alt="check-all" />
-									<p class="ml-2">Who We are</p>
-								</a>
-								<a href="#" class="link flex items-center">
-									<img src="./assets/images/check-all.png" alt="check-all" />
-									<p class="ml-2">Leadership</p>
-								</a>
-								<a href="#" class="link flex items-center">
-									<img src="./assets/images/check-all.png" alt="check-all" />
-									<p class="ml-2">Partners</p>
-								</a>
-							</div>
+            <!--FT Links-->
+            <div class="ft-links flex flex-col justify-between">
+              <div class="links block">
+                <h6>Learn More</h6>
+                <a href="#" class="link flex items-center">
+                  <img src="./assets/images/check-all.png" alt="check-all" />
+                  <p class="ml-2">About Us</p>
+                </a>
+                <a href="#" class="link flex items-center">
+                  <img src="./assets/images/check-all.png" alt="check-all" />
+                  <p class="ml-2">Who We are</p>
+                </a>
+                <a href="#" class="link flex items-center">
+                  <img src="./assets/images/check-all.png" alt="check-all" />
+                  <p class="ml-2">Leadership</p>
+                </a>
+                <a href="#" class="link flex items-center">
+                  <img src="./assets/images/check-all.png" alt="check-all" />
+                  <p class="ml-2">Partners</p>
+                </a>
+              </div>
 
-							<div class="links block">
-								<h6>Contribute</h6>
-								<a href="#" class="link flex items-center">
-									<img src="./assets/images/check-all.png" alt="check-all" />
-									<p class="ml-2">Giving</p>
-								</a>
-								<a href="#" class="link flex items-center">
-									<img src="./assets/images/check-all.png" alt="check-all" />
-									<p class="ml-2">Volunteer</p>
-								</a>
-								<a href="#" class="link flex items-center">
-									<img src="./assets/images/check-all.png" alt="check-all" />
-									<p class="ml-2">Patient & Family Advisors</p>
-								</a>
-							</div>
-						</div>
+              <div class="links block">
+                <h6>Contribute</h6>
+                <a href="#" class="link flex items-center">
+                  <img src="./assets/images/check-all.png" alt="check-all" />
+                  <p class="ml-2">Giving</p>
+                </a>
+                <a href="#" class="link flex items-center">
+                  <img src="./assets/images/check-all.png" alt="check-all" />
+                  <p class="ml-2">Volunteer</p>
+                </a>
+                <a href="#" class="link flex items-center">
+                  <img src="./assets/images/check-all.png" alt="check-all" />
+                  <p class="ml-2">Patient & Family Advisors</p>
+                </a>
+              </div>
+            </div>
 
-						<!--FT Links-->
-						<div class="ft-links flex flex-col justify-between">
-							<div class="links block">
-								<h6>Regional</h6>
-								<a href="#" class="link flex items-center">
-									<img src="./assets/images/check-all.png" alt="check-all" />
-									<p class="ml-2">Regional Patients</p>
-								</a>
-								<a href="#" class="link flex items-center">
-									<img src="./assets/images/check-all.png" alt="check-all" />
-									<p class="ml-2">Regional Collaborators</p>
-								</a>
-							</div>
+            <!--FT Links-->
+            <div class="ft-links flex flex-col justify-between">
+              <div class="links block">
+                <h6>Regional</h6>
+                <a href="#" class="link flex items-center">
+                  <img src="./assets/images/check-all.png" alt="check-all" />
+                  <p class="ml-2">Regional Patients</p>
+                </a>
+                <a href="#" class="link flex items-center">
+                  <img src="./assets/images/check-all.png" alt="check-all" />
+                  <p class="ml-2">Regional Collaborators</p>
+                </a>
+              </div>
 
-							<div class="links block">
-								<h6>For Professionals</h6>
-								<a href="#" class="link flex items-center">
-									<img src="./assets/images/check-all.png" alt="check-all" />
-									<p class="ml-2">Resources</p>
-								</a>
-								<a href="#" class="link flex items-center">
-									<img src="./assets/images/check-all.png" alt="check-all" />
-									<p class="ml-2">Nurses</p>
-								</a>
-								<a href="#" class="link flex items-center">
-									<img src="./assets/images/check-all.png" alt="check-all" />
-									<p class="ml-2">Staff login</p>
-								</a>
-							</div>
-						</div>
+              <div class="links block">
+                <h6>For Professionals</h6>
+                <a href="#" class="link flex items-center">
+                  <img src="./assets/images/check-all.png" alt="check-all" />
+                  <p class="ml-2">Resources</p>
+                </a>
+                <a href="#" class="link flex items-center">
+                  <img src="./assets/images/check-all.png" alt="check-all" />
+                  <p class="ml-2">Nurses</p>
+                </a>
+                <a href="#" class="link flex items-center">
+                  <img src="./assets/images/check-all.png" alt="check-all" />
+                  <p class="ml-2">Staff login</p>
+                </a>
+              </div>
+            </div>
 
-						<!--FT Links-->
-						<div class="ft-links flex flex-col justify-between">
-							<div class="links block">
-								<h6>Connect</h6>
-								<a href="./contact.html" class="link flex items-center">
-									<img src="./assets/images/check-all.png" alt="check-all" />
-									<p class="ml-2">Contact Us</p>
-								</a>
-								<a href="/news.html" class="link flex items-center">
-									<img src="./assets/images/check-all.png" alt="check-all" />
-									<p class="ml-2">News & Media</p>
-								</a>
-								<a href="#" class="link flex items-center">
-									<img src="./assets/images/check-all.png" alt="check-all" />
-									<p class="ml-2">Events</p>
-								</a>
-							</div>
+            <!--FT Links-->
+            <div class="ft-links flex flex-col justify-between">
+              <div class="links block">
+                <h6>Connect</h6>
+                <a href="./contact.html" class="link flex items-center">
+                  <img src="./assets/images/check-all.png" alt="check-all" />
+                  <p class="ml-2">Contact Us</p>
+                </a>
+                <a href="/news.html" class="link flex items-center">
+                  <img src="./assets/images/check-all.png" alt="check-all" />
+                  <p class="ml-2">News & Media</p>
+                </a>
+                <a href="#" class="link flex items-center">
+                  <img src="./assets/images/check-all.png" alt="check-all" />
+                  <p class="ml-2">Events</p>
+                </a>
+              </div>
 
-							<div class="links block">
-								<h6>Join Our Team</h6>
-								<a href="./careers.html" class="link flex items-center">
-									<img src="./assets/images/check-all.png" alt="check-all" />
-									<p class="ml-2">Careers</p>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+              <div class="links block">
+                <h6>Join Our Team</h6>
+                <a href="./careers.html" class="link flex items-center">
+                  <img src="./assets/images/check-all.png" alt="check-all" />
+                  <p class="ml-2">Careers</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-			<div class="footer-bar flex items-center">
-				<div class="container flex flex-col lg:flex-row lg:items-center lg:justify-between">
-					<p class="copy flex items-center">
-						<img src="./assets/images/copyright-light.png" alt="cp" class="mr-1" /> 2024 Equity
-						Afya. All Rights Reserved.
-					</p>
+      <div class="footer-bar flex items-center">
+        <div
+          class="container flex flex-col lg:flex-row lg:items-center lg:justify-between"
+        >
+          <p class="copy flex items-center">
+            <img
+              src="./assets/images/copyright-light.png"
+              alt="cp"
+              class="mr-1"
+            />
+            2024 Equity Afya. All Rights Reserved.
+          </p>
 
-					<div class="fb-links h-auto w-auto flex flex-col lg:flex-row md:flex-row lg:items-center">
-						<a href="#">Patient Rights</a>
-						<a href="#">Terms of Use</a>
-						<a href="#">Privacy Policy</a>
-						<a href="#">Non Discrimination</a>
-						<a href="#">Price Transparency</a>
-					</div>
-				</div>
-			</div>
-		</footer>
+          <div
+            class="fb-links h-auto w-auto flex flex-col lg:flex-row md:flex-row lg:items-center"
+          >
+            <a href="#">Patient Rights</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Non Discrimination</a>
+            <a href="#">Price Transparency</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-		<!--Js Files-->
-		<script src="./assets/js/all.min.js"></script>
-		<script src="./assets/js/jquery.min.js"></script>
-		<script src="./assets/js/swiper-bundle.min.js"></script>
-		<script src="./assets/js/fancybox.umd.js"></script>
-		<script src="./assets/js/main.js"></script>
+    <!--Js Files-->
+    <script src="./assets/js/all.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/fancybox.umd.js"></script>
+    <script src="./assets/js/main.js"></script>
 
-		<!--Search Functionality-->
-		<script>
-			document.getElementById("search-icon").addEventListener("click", function (e) {
-				e.preventDefault(); // Prevent default anchor behavior
+    <!--Search Functionality-->
+    <script>
+      document
+        .getElementById("search-icon")
+        .addEventListener("click", function (e) {
+          e.preventDefault(); // Prevent default anchor behavior
 
-				Fancybox.show([
-					{
-						src: "#search-popup",
-						type: "inline",
-					},
-				]);
-			});
-		</script>
-	</body>
+          Fancybox.show([
+            {
+              src: "#search-popup",
+              type: "inline",
+            },
+          ]);
+        });
+    </script>
+  </body>
 </html>
