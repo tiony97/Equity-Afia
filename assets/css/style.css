@@ -2864,19 +2864,19 @@ footer .footer-bar .container .fb-links a:last-of-type::after {
   line-height: 22px;
   color: rgba(0, 0, 0, 0.3019607843);
 }
-#other-locations .container .filter-section .filter-items span {
+#other-locations .container .filter-section .filter-items button {
   cursor: pointer;
   padding: 8px 16px;
 }
-#other-locations .container .filter-section .filter-items span:first-of-type {
+#other-locations .container .filter-section .filter-items button:first-of-type {
   color: var(--primary-accent-color);
   background-color: rgba(226, 35, 26, 0.2);
 }
-#other-locations .container .filter-section .filter-items span:nth-of-type(2) {
+#other-locations .container .filter-section .filter-items button:nth-of-type(2) {
   background-color: rgba(255, 158, 21, 0.2);
   color: var(--secondary-accent-color);
 }
-#other-locations .container .filter-section .filter-items span:nth-of-type(3) {
+#other-locations .container .filter-section .filter-items button:nth-of-type(3) {
   background-color: var(--primary-accent-color);
   color: var(--background-color);
 }
@@ -3283,25 +3283,25 @@ footer .footer-bar .container .fb-links a:last-of-type::after {
   line-height: 22px;
   color: rgba(0, 0, 0, 0.3019607843);
 }
-#location-map .content .filter-items span {
+#location-map .content .filter-items button {
   cursor: pointer;
   padding: 8px 16px;
 }
-#location-map .content .filter-items span p {
+#location-map .content .filter-items button p {
   text-wrap: nowrap;
 }
-#location-map .content .filter-items span i {
+#location-map .content .filter-items button i {
   border: 1px solid rgba(0, 0, 0, 0.3019607843);
 }
-#location-map .content .filter-items span:first-of-type {
+#location-map .content .filter-items button:first-of-type {
   color: var(--primary-accent-color);
   background-color: rgba(226, 35, 26, 0.2);
 }
-#location-map .content .filter-items span:nth-of-type(2) {
+#location-map .content .filter-items button:nth-of-type(2) {
   background-color: rgba(255, 158, 21, 0.2);
   color: var(--secondary-accent-color);
 }
-#location-map .content .filter-items span:nth-of-type(3) {
+#location-map .content .filter-items button:nth-of-type(3) {
   background-color: var(--primary-accent-color);
   color: var(--background-color);
 }

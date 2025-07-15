@@ -14,6 +14,137 @@
       type="image/x-icon"
     />
     <title>Equity Afia</title>
+
+    <style>
+      .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+      }
+
+      thead {
+        background-color: #e2231a;
+        color: white;
+      }
+
+      th,
+      td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      th {
+        font-weight: 600;
+      }
+
+      .col-no {
+        width: 50px;
+        text-align: center;
+      }
+
+      .col-county {
+        width: 120px;
+      }
+
+      .location-item {
+        display: flex;
+        margin-bottom: 15px;
+        align-items: flex-start;
+      }
+
+      .location-number {
+        background: #ff9e15;
+        color: white;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        flex-shrink: 0;
+        font-size: 0.8rem;
+      }
+
+      .location-details {
+        flex: 1;
+      }
+
+      /* Responsive styles */
+      @media (max-width: 768px) {
+        .col-county {
+          width: 100px;
+        }
+
+        th,
+        td {
+          padding: 10px;
+          font-size: 0.9rem;
+        }
+      }
+
+      @media (max-width: 576px) {
+        table {
+          display: block;
+        }
+
+        thead {
+          display: none;
+        }
+
+        tr {
+          display: block;
+          margin-bottom: 20px;
+          border: 1px solid #ecf0f1;
+          border-radius: 8px;
+          padding: 10px;
+        }
+
+        td {
+          display: flex;
+          flex-direction: column;
+          padding: 8px;
+          border: none;
+        }
+
+        td:before {
+          content: attr(data-label);
+          font-weight: bold;
+          margin-bottom: 5px;
+          color: #3498db;
+        }
+
+        .col-no,
+        .col-county {
+          width: 100%;
+        }
+
+        .col-no {
+          text-align: left;
+          border-bottom: 1px dashed #ecf0f1;
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+        }
+
+        .col-county {
+          border-bottom: 1px dashed #ecf0f1;
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+        }
+
+        .location-item {
+          margin-bottom: 10px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!--Accesibility Button-->
@@ -166,292 +297,67 @@
 
     <!--Page Content-->
     <main>
-      <!--Common Banner-->
-      <section id="common-banner" class="relative">
-        <div class="overlay absolute top-0 left-0 w-full h-full"></div>
-
-        <div class="container flex items-center justify-between">
-          <div class="content" style="z-index: 99">
-            <h5 style="z-index: 5">YOUR CARING HEALTHCARE PARTNER</h5>
-            <h1 style="z-index: 5" class="mt-2">News & Media</h1>
-          </div>
-          <div class="image-wrapper">
-            <img
-              src="./assets/images/news-banner-image.png"
-              alt="about-banner-image"
-              class="banner-image"
-              style="z-index: 5"
-            />
+      <div class="container py-10">
+        <div class="locations-table">
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th class="col-no">No.</th>
+                  <th class="col-county">County</th>
+                  <th class="col-locations">Medical Center Locations</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="col-no">1.</td>
+                  <td class="col-county">Nairobi</td>
+                  <td class="col-locations">
+                    <div class="location-item">
+                      <span class="location-number">1</span>
+                      <div class="location-details">
+                        <strong>Mountain Mall</strong> – Thika Road 2nd Floor
+                        Mountain Mall Building
+                      </div>
+                    </div>
+                    <div class="location-item">
+                      <span class="location-number">2</span>
+                      <div class="location-details">
+                        <strong>Pangani</strong> - Goodwill Building Ground
+                        Floor-Agoi Road, Pangani Shopping Centre
+                      </div>
+                    </div>
+                    <!-- Continue with all other locations in this format -->
+                    <div class="location-item">
+                      <span class="location-number">3</span>
+                      <div class="location-details">
+                        <strong>Ngong Road</strong> - KISM Towers, 1st Floor,
+                        Ngong Road, near Prestige Mall
+                      </div>
+                    </div>
+                    <!-- Add all remaining locations similarly -->
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-no">2.</td>
+                  <td class="col-county">Kiambu</td>
+                  <td class="col-locations">
+                    <div class="location-item">
+                      <span class="location-number">20</span>
+                      <div class="location-details">
+                        <strong>Githurai</strong> - Charma House, 2nd-floor
+                        Ngumba Road next to Equity Bank
+                      </div>
+                    </div>
+                    <!-- Add all Kiambu locations -->
+                  </td>
+                </tr>
+                <!-- Continue with all other counties -->
+              </tbody>
+            </table>
           </div>
         </div>
-      </section>
-
-      <!--News Section-->
-      <section id="news-posts">
-        <div class="container flex flex-col items-center">
-          <p class="intro lg:mb-10 md:mb-5 mb-3">
-            Lorem ipsum dolor sit amet consectetur. At faucibus eget convallis
-            habitasse luctus. Velit donec quam ridiculus nullam ac nisl
-            faucibus. Augue diam egestas hac ac adipiscing elementum imperdiet
-            suspendisse lectus.
-          </p>
-
-          <div
-            class="news-grid grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4"
-          >
-            <div class="post">
-              <div class="image-wrapper">
-                <img
-                  src="./assets/images/news-post-image.jpeg"
-                  alt="post-image"
-                  class="post-image"
-                />
-                <span>PRESS RELEASE</span>
-              </div>
-              <div class="content flex flex-col justify-between">
-                <div class="space-y-2">
-                  <h6>MAY 27 2024</h6>
-                  <p>
-                    Equity Afia opens 7 new medical centres expanding coverage
-                    across the country
-                  </p>
-                </div>
-                <a
-                  href="./article.html"
-                  class="btn-sm about-us flex items-center"
-                  >Learn More<img
-                    src="./assets/images/arrow-circle-light.png"
-                    alt="arrow-circle"
-                /></a>
-              </div>
-            </div>
-
-            <div class="post">
-              <div class="image-wrapper">
-                <img
-                  src="./assets/images/news-post-image.jpeg"
-                  alt="post-image"
-                  class="post-image"
-                />
-                <span>PRESS RELEASE</span>
-              </div>
-              <div class="content flex flex-col justify-between">
-                <div class="space-y-2">
-                  <h6>MAY 27 2024</h6>
-                  <p>
-                    Equity Afia Expands its Franchise Network to 47 Medical
-                    Centres
-                  </p>
-                </div>
-                <a
-                  href="./article.html"
-                  class="btn-sm about-us flex items-center"
-                  >Learn More<img
-                    src="./assets/images/arrow-circle-light.png"
-                    alt="arrow-circle"
-                /></a>
-              </div>
-            </div>
-
-            <div class="post">
-              <div class="image-wrapper">
-                <img
-                  src="./assets/images/news-post-image.jpeg"
-                  alt="post-image"
-                  class="post-image"
-                />
-                <span>PRESS RELEASE</span>
-              </div>
-              <div class="content flex flex-col justify-between">
-                <div class="space-y-2">
-                  <h6>MAY 27 2024</h6>
-                  <p>
-                    Equity Afia Opens 3 New Medical Centres in Lodwar, Marsabit
-                    and Thika Road
-                  </p>
-                </div>
-                <a
-                  href="./article.html"
-                  class="btn-sm about-us flex items-center"
-                  >Learn More<img
-                    src="./assets/images/arrow-circle-light.png"
-                    alt="arrow-circle"
-                /></a>
-              </div>
-            </div>
-
-            <div class="post">
-              <div class="image-wrapper">
-                <img
-                  src="./assets/images/news-post-image.jpeg"
-                  alt="post-image"
-                  class="post-image"
-                />
-                <span>PRESS RELEASE</span>
-              </div>
-              <div class="content flex flex-col justify-between">
-                <div class="space-y-2">
-                  <h6>MAY 27 2024</h6>
-                  <p>
-                    Equity Afia opens 7 new medical centres expanding coverage
-                    across the country
-                  </p>
-                </div>
-                <a
-                  href="./article.html"
-                  class="btn-sm about-us flex items-center"
-                  >Learn More<img
-                    src="./assets/images/arrow-circle-light.png"
-                    alt="arrow-circle"
-                /></a>
-              </div>
-            </div>
-
-            <div class="post">
-              <div class="image-wrapper">
-                <img
-                  src="./assets/images/news-post-image.jpeg"
-                  alt="post-image"
-                  class="post-image"
-                />
-                <span>PRESS RELEASE</span>
-              </div>
-              <div class="content flex flex-col justify-between">
-                <div class="space-y-2">
-                  <h6>MAY 27 2024</h6>
-                  <p>
-                    Equity Afia Expands its Franchise Network to 47 Medical
-                    Centres
-                  </p>
-                </div>
-                <a
-                  href="./article.html"
-                  class="btn-sm about-us flex items-center"
-                  >Learn More<img
-                    src="./assets/images/arrow-circle-light.png"
-                    alt="arrow-circle"
-                /></a>
-              </div>
-            </div>
-
-            <div class="post">
-              <div class="image-wrapper">
-                <img
-                  src="./assets/images/news-post-image.jpeg"
-                  alt="post-image"
-                  class="post-image"
-                />
-                <span>PRESS RELEASE</span>
-              </div>
-              <div class="content flex flex-col justify-between">
-                <div class="space-y-2">
-                  <h6>MAY 27 2024</h6>
-                  <p>
-                    Equity Afia Opens 3 New Medical Centres in Lodwar, Marsabit
-                    and Thika Road
-                  </p>
-                </div>
-                <a
-                  href="./article.html"
-                  class="btn-sm about-us flex items-center"
-                  >Learn More<img
-                    src="./assets/images/arrow-circle-light.png"
-                    alt="arrow-circle"
-                /></a>
-              </div>
-            </div>
-
-            <div class="post">
-              <div class="image-wrapper">
-                <img
-                  src="./assets/images/news-post-image.jpeg"
-                  alt="post-image"
-                  class="post-image"
-                />
-                <span>PRESS RELEASE</span>
-              </div>
-              <div class="content flex flex-col justify-between">
-                <div class="space-y-2">
-                  <h6>MAY 27 2024</h6>
-                  <p>
-                    Equity Afia opens 7 new medical centres expanding coverage
-                    across the country
-                  </p>
-                </div>
-                <a
-                  href="./article.html"
-                  class="btn-sm about-us flex items-center"
-                  >Learn More<img
-                    src="./assets/images/arrow-circle-light.png"
-                    alt="arrow-circle"
-                /></a>
-              </div>
-            </div>
-
-            <div class="post">
-              <div class="image-wrapper">
-                <img
-                  src="./assets/images/news-post-image.jpeg"
-                  alt="post-image"
-                  class="post-image"
-                />
-                <span>PRESS RELEASE</span>
-              </div>
-              <div class="content flex flex-col justify-between">
-                <div class="space-y-2">
-                  <h6>MAY 27 2024</h6>
-                  <p>
-                    Equity Afia Expands its Franchise Network to 47 Medical
-                    Centres
-                  </p>
-                </div>
-                <a
-                  href="./article.html"
-                  class="btn-sm about-us flex items-center"
-                  >Learn More<img
-                    src="./assets/images/arrow-circle-light.png"
-                    alt="arrow-circle"
-                /></a>
-              </div>
-            </div>
-
-            <div class="post">
-              <div class="image-wrapper">
-                <img
-                  src="./assets/images/news-post-image.jpeg"
-                  alt="post-image"
-                  class="post-image"
-                />
-                <span>PRESS RELEASE</span>
-              </div>
-              <div class="content flex flex-col justify-between">
-                <div class="space-y-2">
-                  <h6>MAY 27 2024</h6>
-                  <p>
-                    Equity Afia Opens 3 New Medical Centres in Lodwar, Marsabit
-                    and Thika Road
-                  </p>
-                </div>
-                <a
-                  href="./article.html"
-                  class="btn-sm about-us flex items-center"
-                  >Learn More<img
-                    src="./assets/images/arrow-circle-light.png"
-                    alt="arrow-circle"
-                /></a>
-              </div>
-            </div>
-          </div>
-
-          <a
-            href="#"
-            class="btn-sm news-pg-btn flex items-center lg:mt-10 md:mt-5 mt-3"
-            >Load More<img
-              src="./assets/images/arrow-circle-light.png"
-              alt="arrow-circle"
-          /></a>
-        </div>
-      </section>
+      </div>
     </main>
 
     <!--Footer-->
