@@ -634,10 +634,148 @@
             </div>
           </div>
 
-          <!--Location Grid (Where location data is added)-->
+          <!--Location Grid (Hardcoded)-->
           <div
             class="locations grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 lg:gap-4 gap-2 lg:mt-8 mt-4"
-          ></div>
+          >
+            <!-- Location 1 -->
+            <div class="location flex flex-col justify-between" data-id="1">
+              <div class="flex items-center justify-between">
+                <h6>Ruiru II</h6>
+                <img
+                  src="./assets/images/duo-icons_location.png"
+                  alt="location-icon"
+                  class="location-icon"
+                />
+              </div>
+              <a
+                href="#ruiru-popup"
+                class="location-btn flex items-center self-end view-details-btn"
+              >
+                <p>View Details</p>
+                <img
+                  src="./assets/images/arrow-circle-accent.png"
+                  alt="arrow-circle-accent"
+                  class="ml-2"
+                />
+              </a>
+            </div>
+
+            <!-- Location 2 -->
+            <div class="location flex flex-col justify-between" data-id="2">
+              <div class="flex items-center justify-between">
+                <h6>Equity Afia Bomet</h6>
+                <img
+                  src="./assets/images/duo-icons_location.png"
+                  alt="location-icon"
+                  class="location-icon"
+                />
+              </div>
+              <a
+                href="#bomet-popup"
+                class="location-btn flex items-center self-end view-details-btn"
+              >
+                <p>View Details</p>
+                <img
+                  src="./assets/images/arrow-circle-accent.png"
+                  alt="arrow-circle-accent"
+                  class="ml-2"
+                />
+              </a>
+            </div>
+
+            <!-- Location 3 -->
+            <div class="location flex flex-col justify-between" data-id="3">
+              <div class="flex items-center justify-between">
+                <h6>Embakasi</h6>
+                <img
+                  src="./assets/images/duo-icons_location.png"
+                  alt="location-icon"
+                  class="location-icon"
+                />
+              </div>
+              <a
+                href="#embakasi-popup"
+                class="location-btn flex items-center self-end view-details-btn"
+              >
+                <p>View Details</p>
+                <img
+                  src="./assets/images/arrow-circle-accent.png"
+                  alt="arrow-circle-accent"
+                  class="ml-2"
+                />
+              </a>
+            </div>
+
+            <!-- Location 4 -->
+            <div class="location flex flex-col justify-between" data-id="4">
+              <div class="flex items-center justify-between">
+                <h6>Chuka</h6>
+                <img
+                  src="./assets/images/duo-icons_location.png"
+                  alt="location-icon"
+                  class="location-icon"
+                />
+              </div>
+              <a
+                href="#chuka-popup"
+                class="location-btn flex items-center self-end view-details-btn"
+              >
+                <p>View Details</p>
+                <img
+                  src="./assets/images/arrow-circle-accent.png"
+                  alt="arrow-circle-accent"
+                  class="ml-2"
+                />
+              </a>
+            </div>
+
+            <!-- Location 5 -->
+            <div class="location flex flex-col justify-between" data-id="5">
+              <div class="flex items-center justify-between">
+                <h6>Bamburi</h6>
+                <img
+                  src="./assets/images/duo-icons_location.png"
+                  alt="location-icon"
+                  class="location-icon"
+                />
+              </div>
+              <a
+                href="#bamburi-popup"
+                class="location-btn flex items-center self-end view-details-btn"
+              >
+                <p>View Details</p>
+                <img
+                  src="./assets/images/arrow-circle-accent.png"
+                  alt="arrow-circle-accent"
+                  class="ml-2"
+                />
+              </a>
+            </div>
+
+            <!-- Location 6 -->
+            <div class="location flex flex-col justify-between" data-id="6">
+              <div class="flex items-center justify-between">
+                <h6>Equity Afia Athi River</h6>
+                <img
+                  src="./assets/images/duo-icons_location.png"
+                  alt="location-icon"
+                  class="location-icon"
+                />
+              </div>
+              <a
+                href="#athi-river-popup"
+                class="location-btn flex items-center self-end view-details-btn"
+              >
+                <p>View Details</p>
+                <img
+                  src="./assets/images/arrow-circle-accent.png"
+                  alt="arrow-circle-accent"
+                  class="ml-2"
+                />
+              </a>
+            </div>
+          </div>
 
           <div
             class="pagination flex items-center mx-auto mt-5 lg:mb-8 mb-5 space-x-2"
@@ -660,13 +798,213 @@
         </div>
       </section>
 
-      <!-- Location popup -->
-      <div class="location-popup flex items-center justify-center">
+      <!-- Hardcoded Location Popups -->
+      <div
+        class="location-popup flex items-center justify-center"
+        id="ruiru-popup"
+      >
         <div class="popup-overlay"></div>
         <div class="popup-content">
           <button class="popup-close">&times;</button>
-          <h3 class="popup-title"></h3>
-          <div class="popup-details"></div>
+          <h3 class="popup-title">Ruiru II</h3>
+          <div class="popup-details">
+            <p class="popup-description">
+              Our Ruiru II branch offers comprehensive healthcare services in a
+              modern facility.
+            </p>
+            <div class="popup-section">
+              <h4>Services Offered</h4>
+              <ul class="services-list">
+                <li>General Practice</li>
+                <li>Maternal Health</li>
+                <li>Pharmacy</li>
+                <li>Lab Services</li>
+              </ul>
+            </div>
+            <div class="popup-section">
+              <h4>Operating Hours</h4>
+              <p class="hours">
+                Monday-Friday: 8:00 AM - 5:00 PM<br />Saturday: 9:00 AM - 2:00
+                PM
+              </p>
+            </div>
+            <div class="popup-section">
+              <h4>Contact Information</h4>
+              <p class="contact">+254 712 345 678</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="location-popup flex items-center justify-center"
+        id="bomet-popup"
+      >
+        <div class="popup-overlay"></div>
+        <div class="popup-content">
+          <button class="popup-close">&times;</button>
+          <h3 class="popup-title">Equity Afia Bomet</h3>
+          <div class="popup-details">
+            <p class="popup-description">
+              Serving the Bomet community with quality affordable healthcare
+              services.
+            </p>
+            <div class="popup-section">
+              <h4>Services Offered</h4>
+              <ul class="services-list">
+                <li>Dental</li>
+                <li>Optometry</li>
+                <li>Pediatrics</li>
+                <li>Chronic Disease Management</li>
+              </ul>
+            </div>
+            <div class="popup-section">
+              <h4>Operating Hours</h4>
+              <p class="hours">Monday-Saturday: 7:30 AM - 6:00 PM</p>
+            </div>
+            <div class="popup-section">
+              <h4>Contact Information</h4>
+              <p class="contact">+254 723 456 789</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="location-popup flex items-center justify-center"
+        id="embakasi-popup"
+      >
+        <div class="popup-overlay"></div>
+        <div class="popup-content">
+          <button class="popup-close">&times;</button>
+          <h3 class="popup-title">Embakasi</h3>
+          <div class="popup-details">
+            <p class="popup-description">
+              Conveniently located to serve the Embakasi community with
+              essential healthcare services.
+            </p>
+            <div class="popup-section">
+              <h4>Services Offered</h4>
+              <ul class="services-list">
+                <li>General Practice</li>
+                <li>Immunization</li>
+                <li>HIV Care</li>
+                <li>Pharmacy</li>
+              </ul>
+            </div>
+            <div class="popup-section">
+              <h4>Operating Hours</h4>
+              <p class="hours">Monday-Friday: 8:00 AM - 5:00 PM</p>
+            </div>
+            <div class="popup-section">
+              <h4>Contact Information</h4>
+              <p class="contact">+254 734 567 890</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="location-popup flex items-center justify-center"
+        id="chuka-popup"
+      >
+        <div class="popup-overlay"></div>
+        <div class="popup-content">
+          <button class="popup-close">&times;</button>
+          <h3 class="popup-title">Chuka</h3>
+          <div class="popup-details">
+            <p class="popup-description">
+              Our Chuka branch brings specialized healthcare services to Tharaka
+              Nithi County.
+            </p>
+            <div class="popup-section">
+              <h4>Services Offered</h4>
+              <ul class="services-list">
+                <li>Surgical Services</li>
+                <li>Maternity</li>
+                <li>Radiology</li>
+                <li>Physiotherapy</li>
+              </ul>
+            </div>
+            <div class="popup-section">
+              <h4>Operating Hours</h4>
+              <p class="hours">Monday-Saturday: 8:00 AM - 5:00 PM</p>
+            </div>
+            <div class="popup-section">
+              <h4>Contact Information</h4>
+              <p class="contact">+254 745 678 901</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="location-popup flex items-center justify-center"
+        id="bamburi-popup"
+      >
+        <div class="popup-overlay"></div>
+        <div class="popup-content">
+          <button class="popup-close">&times;</button>
+          <h3 class="popup-title">Bamburi</h3>
+          <div class="popup-details">
+            <p class="popup-description">
+              Serving the coastal region with comprehensive healthcare
+              solutions.
+            </p>
+            <div class="popup-section">
+              <h4>Services Offered</h4>
+              <ul class="services-list">
+                <li>Dermatology</li>
+                <li>ENT</li>
+                <li>Travel Clinic</li>
+                <li>Wellness Checks</li>
+              </ul>
+            </div>
+            <div class="popup-section">
+              <h4>Operating Hours</h4>
+              <p class="hours">
+                Monday-Friday: 8:00 AM - 5:00 PM<br />Sunday: 9:00 AM - 1:00 PM
+              </p>
+            </div>
+            <div class="popup-section">
+              <h4>Contact Information</h4>
+              <p class="contact">+254 756 789 012</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="location-popup flex items-center justify-center"
+        id="athi-river-popup"
+      >
+        <div class="popup-overlay"></div>
+        <div class="popup-content">
+          <button class="popup-close">&times;</button>
+          <h3 class="popup-title">Equity Afia Athi River</h3>
+          <div class="popup-details">
+            <p class="popup-description">
+              Industrial area branch serving Athi River and surrounding
+              communities.
+            </p>
+            <div class="popup-section">
+              <h4>Services Offered</h4>
+              <ul class="services-list">
+                <li>Occupational Health</li>
+                <li>First Aid Training</li>
+                <li>Emergency Care</li>
+                <li>Pharmacy</li>
+              </ul>
+            </div>
+            <div class="popup-section">
+              <h4>Operating Hours</h4>
+              <p class="hours">Monday-Saturday: 7:00 AM - 7:00 PM</p>
+            </div>
+            <div class="popup-section">
+              <h4>Contact Information</h4>
+              <p class="contact">+254 767 890 123</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -987,239 +1325,28 @@
         });
     </script>
 
-    <!--Location details popup-->
+    <!--Locations popups -->
     <script>
       $(document).ready(function () {
-        // Complete location data with all your original locations
-        const locationsData = [
-          {
-            id: 1,
-            title: "Ruiru II",
-            details:
-              "Our Ruiru II branch offers comprehensive healthcare services in a modern facility.",
-            services: [
-              "General Practice",
-              "Maternal Health",
-              "Pharmacy",
-              "Lab Services",
-            ],
-            hours:
-              "Monday-Friday: 8:00 AM - 5:00 PM\nSaturday: 9:00 AM - 2:00 PM",
-            contact: "+254 712 345 678",
-          },
-          {
-            id: 2,
-            title: "Equity Afia Bomet",
-            details:
-              "Serving the Bomet community with quality affordable healthcare services.",
-            services: [
-              "Dental",
-              "Optometry",
-              "Pediatrics",
-              "Chronic Disease Management",
-            ],
-            hours: "Monday-Saturday: 7:30 AM - 6:00 PM",
-            contact: "+254 723 456 789",
-          },
-          {
-            id: 3,
-            title: "Embakasi",
-            details:
-              "Conveniently located to serve the Embakasi community with essential healthcare services.",
-            services: [
-              "General Practice",
-              "Immunization",
-              "HIV Care",
-              "Pharmacy",
-            ],
-            hours: "Monday-Friday: 8:00 AM - 5:00 PM",
-            contact: "+254 734 567 890",
-          },
-          {
-            id: 4,
-            title: "Chuka",
-            details:
-              "Our Chuka branch brings specialized healthcare services to Tharaka Nithi County.",
-            services: [
-              "Surgical Services",
-              "Maternity",
-              "Radiology",
-              "Physiotherapy",
-            ],
-            hours: "Monday-Saturday: 8:00 AM - 5:00 PM",
-            contact: "+254 745 678 901",
-          },
-          {
-            id: 5,
-            title: "Bamburi",
-            details:
-              "Serving the coastal region with comprehensive healthcare solutions.",
-            services: [
-              "Dermatology",
-              "ENT",
-              "Travel Clinic",
-              "Wellness Checks",
-            ],
-            hours:
-              "Monday-Friday: 8:00 AM - 5:00 PM\nSunday: 9:00 AM - 1:00 PM",
-            contact: "+254 756 789 012",
-          },
-          {
-            id: 6,
-            title: "Equity Afia Athi River",
-            details:
-              "Industrial area branch serving Athi River and surrounding communities.",
-            services: [
-              "Occupational Health",
-              "First Aid Training",
-              "Emergency Care",
-              "Pharmacy",
-            ],
-            hours: "Monday-Saturday: 7:00 AM - 7:00 PM",
-            contact: "+254 767 890 123",
-          },
-          {
-            id: 7,
-            title: "Emali",
-            details:
-              "Strategic location serving the busy Nairobi-Mombasa highway community.",
-            services: [
-              "Emergency Services",
-              "Trauma Care",
-              "Ambulance Services",
-              "Pharmacy",
-            ],
-            hours: "24/7 Emergency Services\nClinic: Daily 7:00 AM - 8:00 PM",
-            contact: "+254 778 901 234",
-          },
-          {
-            id: 8,
-            title: "Equity Afia Bungoma",
-            details:
-              "Bringing specialized healthcare services to Western Kenya.",
-            services: [
-              "Surgical Services",
-              "Dialysis",
-              "Oncology",
-              "Cardiology",
-            ],
-            hours: "Monday-Saturday: 7:30 AM - 6:00 PM",
-            contact: "+254 789 012 345",
-          },
-          {
-            id: 9,
-            title: "Equity Afia Chokaa",
-            details:
-              "Community-focused healthcare services in Chokaa and surrounding areas.",
-            services: [
-              "Family Medicine",
-              "Child Wellness",
-              "Geriatric Care",
-              "Counseling",
-            ],
-            hours:
-              "Monday-Friday: 8:00 AM - 5:00 PM\nSaturday: 9:00 AM - 2:00 PM",
-            contact: "+254 790 123 456",
-          },
-        ];
-
-        // Function to generate location HTML
-        function generateLocationHTML(location) {
-          return `
-      <div class="location flex flex-col justify-between" data-id="${location.id}">
-        <div class="flex items-center justify-between">
-          <h6>${location.title}</h6>
-          <img src="./assets/images/duo-icons_location.png" alt="location-icon" class="location-icon" />
-        </div>
-        <a href="#" class="location-btn flex items-center self-end view-details-btn">
-          <p>View Details</p>
-          <img src="./assets/images/arrow-circle-accent.png" alt="arrow-circle-accent" class="ml-2" />
-        </a>
-      </div>
-    `;
-        }
-
-        // Function to populate locations
-        function populateLocations() {
-          const $locationsContainer = $(".locations");
-          $locationsContainer.empty();
-
-          locationsData.forEach((location) => {
-            $locationsContainer.append(generateLocationHTML(location));
-          });
-        }
-
-        // Enhanced function to show location details in popup
-        function showLocationDetails(locationId) {
-          const location = locationsData.find((loc) => loc.id === locationId);
-          if (!location) return;
-
-          // Prevent scrolling
-          $("body").addClass("no-scroll");
-
-          // Set the title
-          $(".popup-title").text(location.title);
-
-          // Build the details HTML
-          const detailsHTML = `
-    <p class="popup-description">${location.details}</p>
-    <div class="popup-section">
-      <h4>Services Offered</h4>
-      <ul class="services-list">
-        ${location.services.map((service) => `<li>${service}</li>`).join("")}
-      </ul>
-    </div>
-    <div class="popup-section">
-      <h4>Operating Hours</h4>
-      <p class="hours">${location.hours.replace(/\n/g, "<br>")}</p>
-    </div>
-    <div class="popup-section">
-      <h4>Contact Information</h4>
-      <p class="contact">${location.contact}</p>
-    </div>
-  `;
-
-          // Insert the HTML into the popup
-          $(".popup-details").html(detailsHTML);
-
-          // Show the popup
-          $(".location-popup").addClass("active").fadeIn(300);
-        }
-        // In your close handlers:
-        $(".popup-close, .popup-overlay").click(function () {
-          $(".location-popup").removeClass("active").fadeOut(300);
-          // Restore scrolling
-          $("body").removeClass("no-scroll");
-        });
-
-        // Also update the ESC key handler:
-        $(document).keyup(function (e) {
-          if (e.key === "Escape" && $(".location-popup").is(":visible")) {
-            $(".location-popup").removeClass("active").fadeOut(300);
-            // Restore scrolling
-            $("body").removeClass("no-scroll");
-          }
-        });
-
-        // Initialize locations
-        populateLocations();
-
-        // Event delegation for view details buttons
-        $(document).on("click", ".view-details-btn", function (e) {
+        // Handle view details button clicks
+        $(".view-details-btn").click(function (e) {
           e.preventDefault();
-          const locationId = parseInt($(this).closest(".location").data("id"));
-          showLocationDetails(locationId);
+          const popupId = $(this).attr("href");
+          $(popupId).addClass("active");
+          $("body").addClass("no-scroll");
         });
 
         // Close popup handlers
         $(".popup-close, .popup-overlay").click(function () {
-          $(".location-popup").removeClass("active").fadeOut(300);
+          $(".location-popup").removeClass("active");
+          $("body").removeClass("no-scroll");
         });
 
         // Close popup on ESC key
         $(document).keyup(function (e) {
-          if (e.key === "Escape" && $(".location-popup").is(":visible")) {
-            $(".location-popup").removeClass("active").fadeOut(300);
+          if (e.key === "Escape" && $(".location-popup.active").length) {
+            $(".location-popup").removeClass("active");
+            $("body").removeClass("no-scroll");
           }
         });
       });
