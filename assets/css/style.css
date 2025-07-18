@@ -4031,4 +4031,91 @@ footer .footer-bar .container .fb-links a:last-of-type::after {
     font-size: 18px;
     line-height: 24.6px;
   }
+}
+/* Job Application Form */
+#apply-form {
+  padding: 3em 0;
+}
+#apply-form .container .content p {
+  font-weight: 400;
+}
+#apply-form .container form .form-item {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#apply-form .container form .form-item label {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.4px;
+  color: var(--foreground-color);
+}
+#apply-form .container form .form-item input,
+#apply-form .container form .form-item textarea,
+#apply-form .container form .form-item select {
+  width: 100%;
+  color: var(--foreground-color);
+  padding: 0.5em;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.3019607843);
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+#apply-form .container form .form-item input:focus,
+#apply-form .container form .form-item textarea:focus,
+#apply-form .container form .form-item select:focus {
+  border: 1px solid var(--secondary-accent-color);
+}
+#apply-form .container form .form-item input::-moz-placeholder, #apply-form .container form .form-item textarea::-moz-placeholder, #apply-form .container form .form-item select::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.3019607843);
+}
+#apply-form .container form .form-item input::placeholder,
+#apply-form .container form .form-item textarea::placeholder,
+#apply-form .container form .form-item select::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.3019607843);
+}
+#apply-form .container form .form-item input {
+  height: 33px;
+}
+#apply-form .container form .form-item input[type=file] {
+  border: none !important;
+  height: -moz-fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+#apply-form .container form .form-item input textarea {
+  height: 160px;
+}
+#apply-form .container form .form-item select {
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 150px;
+  overflow-y: auto;
+}
+#apply-form .container form .form-item select option:disabled {
+  color: #464646;
+  background-color: #999;
+}
+#apply-form .container form button {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 5px 15px;
+  background-color: var(--primary-accent-color);
+  color: var(--background-color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.4px;
+}
+#apply-form .container form button img {
+  margin-left: 0.5em;
 }/*# sourceMappingURL=style.css.map */

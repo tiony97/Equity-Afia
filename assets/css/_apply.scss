@@ -1,0 +1,81 @@
+/* Job Application Form */
+#apply-form {
+  padding: 3em 0;
+  .container {
+    .content {
+      p {
+        font-weight: 400;
+      }
+    }
+
+    form {
+      .form-item {
+        width: 100%;
+        height: fit-content;
+        label {
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 18.4px;
+          color: var(--foreground-color);
+        }
+        input,
+        textarea,
+        select {
+          width: 100%;
+          color: var(--foreground-color);
+          padding: 0.5em;
+          border: none;
+          border: 1px solid #0000004d;
+          outline: none;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+
+          &:focus {
+            border: 1px solid var(--secondary-accent-color);
+          }
+          &::placeholder {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #0000004d;
+          }
+        }
+        input {
+          height: 33px;
+        }
+        input[type="file"] {
+          border: none !important;
+          height: fit-content;
+          cursor: pointer;
+        }
+        input textarea {
+          height: 160px;
+        }
+        select {
+          height: fit-content;
+          max-height: 150px;
+          overflow-y: auto;
+
+          option:disabled {
+            color: #464646; // faded text
+            background-color: #999;
+          }
+        }
+      }
+      button {
+        width: fit-content;
+        height: fit-content;
+        padding: 5px 15px;
+        background-color: var(--primary-accent-color);
+        color: var(--background-color);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18.4px;
+        img {
+          margin-left: 0.5em;
+        }
+      }
+    }
+  }
+}
