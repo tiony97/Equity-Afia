@@ -620,14 +620,20 @@
             <div
               class="items flex items-center justify-between lg:justify-start md:justify-start"
             >
-              <button class="item flex items-center">
-                <p class="mr-2">By Countries</p>
-                <i class="fas fa-angle-down"></i>
-              </button>
-              <button class="item flex items-center lg:mx-3 md:mx-1">
-                <p class="mr-2">By Service</p>
-                <i class="fas fa-angle-down"></i>
-              </button>
+              <select class="item countries">
+                <option value="" selected disabled hidden>By Countries</option>
+                <!-- Add your country options here -->
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+              </select>
+
+              <select class="item services lg:mx-3 md:mx-1">
+                <option value="" selected disabled hidden>By Service</option>
+                <!-- Add your service options here -->
+                <option value="service1">Service 1</option>
+                <option value="service2">Service 2</option>
+              </select>
+
               <button class="item flex items-center">
                 <p>Filter</p>
               </button>

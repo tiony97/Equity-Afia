@@ -284,7 +284,10 @@
           >
             <h2>Other Locations</h2>
 
-            <div class="filter-items flex flex-col lg:flex-row lg:items-center">
+            <!--Filter Section-->
+            <div
+              class="filter-items flex flex-col lg:flex-row lg:items-center lg:justify-between lg:mt-8 mt-4"
+            >
               <form class="lg:mr-4 mr-2">
                 <input
                   type="search"
@@ -294,15 +297,26 @@
                 />
               </form>
 
-              <div class="items flex items-center">
-                <button class="item flex items-center">
-                  <p class="mr-2">Country</p>
-                  <i class="fas fa-angle-down"></i>
-                </button>
-                <button class="item flex items-center mx-3">
-                  <p class="mr-2">County</p>
-                  <i class="fas fa-angle-down"></i>
-                </button>
+              <!--Filter Items-->
+              <div
+                class="items flex items-center justify-between lg:justify-start md:justify-start"
+              >
+                <select class="item countries">
+                  <option value="" selected disabled hidden>
+                    By Countries
+                  </option>
+                  <!-- Add your country options here -->
+                  <option value="us">United States</option>
+                  <option value="uk">United Kingdom</option>
+                </select>
+
+                <select class="item services lg:mx-3 md:mx-1">
+                  <option value="" selected disabled hidden>By Service</option>
+                  <!-- Add your service options here -->
+                  <option value="service1">Service 1</option>
+                  <option value="service2">Service 2</option>
+                </select>
+
                 <button class="item flex items-center">
                   <p>Filter</p>
                 </button>

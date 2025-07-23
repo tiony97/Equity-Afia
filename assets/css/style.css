@@ -2830,14 +2830,11 @@ footer .footer-bar .container .fb-links a:last-of-type::after {
   background-color: #fdf2f1;
   padding: 2em 0;
 }
-#other-locations .container .filter-section h2 {
-  width: 40%;
-}
-#other-locations .container .filter-section .filter-items form {
+#other-locations .container .filter-items form {
   height: 35px;
-  width: 20vw;
+  width: 15vw;
 }
-#other-locations .container .filter-section .filter-items form input {
+#other-locations .container .filter-items form input {
   width: 100%;
   height: 100%;
   background: transparent;
@@ -2850,36 +2847,56 @@ footer .footer-bar .container .fb-links a:last-of-type::after {
   font-weight: 400;
   line-height: 22px;
 }
-#other-locations .container .filter-section .filter-items form input:focus {
+#other-locations .container .filter-items form input:focus {
   border: 1px solid var(--secondary-accent-color);
 }
-#other-locations .container .filter-section .filter-items form input::-moz-placeholder {
+#other-locations .container .filter-items form input::-moz-placeholder {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   color: rgba(0, 0, 0, 0.3019607843);
 }
-#other-locations .container .filter-section .filter-items form input::placeholder {
+#other-locations .container .filter-items form input::placeholder {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   color: rgba(0, 0, 0, 0.3019607843);
 }
-#other-locations .container .filter-section .filter-items button {
+#other-locations .container .filter-items .items select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   cursor: pointer;
-  padding: 8px 16px;
+  padding: 8px 32px 8px 16px;
+  border: none;
+  font-size: 16px;
+  color: inherit;
+  text-wrap: nowrap;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='%23000' d='M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z'/%3E%3C/svg%3E");
 }
-#other-locations .container .filter-section .filter-items button:first-of-type {
+#other-locations .container .filter-items .items select:focus {
+  outline: none;
+}
+#other-locations .container .filter-items .items .countries {
   color: var(--primary-accent-color);
   background-color: rgba(226, 35, 26, 0.2);
 }
-#other-locations .container .filter-section .filter-items button:nth-of-type(2) {
+#other-locations .container .filter-items .items .services {
   background-color: rgba(255, 158, 21, 0.2);
   color: var(--secondary-accent-color);
 }
-#other-locations .container .filter-section .filter-items button:nth-of-type(3) {
+#other-locations .container .filter-items .items button {
+  cursor: pointer;
+  padding: 8px 16px;
   background-color: var(--primary-accent-color);
   color: var(--background-color);
+  border: none;
+}
+#other-locations .container .filter-items .items button p {
+  text-wrap: nowrap;
 }
 #other-locations .container .locations .location {
   background-color: var(--background-color);
@@ -3284,27 +3301,41 @@ footer .footer-bar .container .fb-links a:last-of-type::after {
   line-height: 22px;
   color: rgba(0, 0, 0, 0.3019607843);
 }
-#location-map .content .filter-items button {
+#location-map .content .filter-items .items select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   cursor: pointer;
-  padding: 8px 16px;
-}
-#location-map .content .filter-items button p {
+  padding: 8px 32px 8px 16px;
+  border: none;
+  font-size: 16px;
+  color: inherit;
   text-wrap: nowrap;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='%23000' d='M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z'/%3E%3C/svg%3E");
 }
-#location-map .content .filter-items button i {
-  border: 1px solid rgba(0, 0, 0, 0.3019607843);
+#location-map .content .filter-items .items select:focus {
+  outline: none;
 }
-#location-map .content .filter-items button:first-of-type {
+#location-map .content .filter-items .items .countries {
   color: var(--primary-accent-color);
   background-color: rgba(226, 35, 26, 0.2);
 }
-#location-map .content .filter-items button:nth-of-type(2) {
+#location-map .content .filter-items .items .services {
   background-color: rgba(255, 158, 21, 0.2);
   color: var(--secondary-accent-color);
 }
-#location-map .content .filter-items button:nth-of-type(3) {
+#location-map .content .filter-items .items button {
+  cursor: pointer;
+  padding: 8px 16px;
   background-color: var(--primary-accent-color);
   color: var(--background-color);
+  border: none;
+}
+#location-map .content .filter-items .items button p {
+  text-wrap: nowrap;
 }
 #location-map .content .locations .location {
   width: 100%;

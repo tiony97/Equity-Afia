@@ -87,52 +87,77 @@
   background-color: #fdf2f1;
   padding: 2em 0;
   .container {
-    .filter-section {
-      h2 {
-        width: 40%;
-      }
-      .filter-items {
-        form {
-          height: 35px;
-          width: 20vw;
-          input {
-            width: 100%;
-            height: 100%;
-            background: transparent;
-            color: var(--foreground-color);
-            padding: 0.5em;
-            border: none;
-            border: 1px solid #0000004d;
-            outline: none;
+    .filter-items {
+      form {
+        height: 35px;
+        width: 15vw;
+        input {
+          width: 100%;
+          height: 100%;
+          background: transparent;
+          color: var(--foreground-color);
+          padding: 0.5em;
+          border: none;
+          border: 1px solid #0000004d;
+          outline: none;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+
+          &:focus {
+            border: 1px solid var(--secondary-accent-color);
+          }
+          &::placeholder {
             font-size: 16px;
             font-weight: 400;
             line-height: 22px;
-
-            &:focus {
-              border: 1px solid var(--secondary-accent-color);
-            }
-            &::placeholder {
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 22px;
-              color: #0000004d;
-            }
+            color: #0000004d;
           }
         }
+      }
+
+      .items {
+        select {
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          cursor: pointer;
+          padding: 8px 32px 8px 16px;
+          border: none;
+          font-size: 16px;
+          color: inherit;
+          text-wrap: nowrap;
+          background-repeat: no-repeat;
+          background-position: right 10px center;
+          background-size: 12px;
+
+          // Font Awesome angle-down as background image
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='%23000' d='M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z'/%3E%3C/svg%3E");
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .countries {
+          color: var(--primary-accent-color);
+          background-color: #e2231a33;
+        }
+
+        .services {
+          background-color: #ff9e1533;
+          color: var(--secondary-accent-color);
+        }
+
         button {
           cursor: pointer;
           padding: 8px 16px;
-          &:first-of-type {
-            color: var(--primary-accent-color);
-            background-color: #e2231a33;
-          }
-          &:nth-of-type(2) {
-            background-color: #ff9e1533;
-            color: var(--secondary-accent-color);
-          }
-          &:nth-of-type(3) {
-            background-color: var(--primary-accent-color);
-            color: var(--background-color);
+          background-color: var(--primary-accent-color);
+          color: var(--background-color);
+          border: none;
+
+          p {
+            text-wrap: nowrap;
           }
         }
       }
