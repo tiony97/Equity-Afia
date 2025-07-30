@@ -4141,4 +4141,53 @@ footer .footer-bar .container .fb-links a:last-of-type::after {
 }
 #apply-form .container form button img {
   margin-left: 0.5em;
+}
+
+/* 404 Page Styles */
+#error-banner {
+  position: relative;
+  background-color: #f9f0f0;
+}
+#error-banner .container {
+  position: relative;
+  min-height: 60vh;
+}
+#error-banner .container * {
+  position: relative;
+  text-align: center;
+}
+#error-banner .container h1 {
+  font-size: 250px;
+  line-height: 260px;
+  font-weight: 800;
+  color: var(--primary-accent-color);
+}
+#error-banner .container p {
+  font-size: 30px;
+  line-height: 32px;
+  color: var(--foreground-color);
+  margin-bottom: 2em;
+}
+#error-banner .container a {
+  background-color: var(--primary-accent-color);
+  color: var(--background-color);
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+#error-banner .container a:hover {
+  scale: 0.95;
+}
+
+/* Responsive layout for Mobile devices */
+@media (max-width: 768px) {
+  #error-banner .container h1 {
+    font-size: 150px;
+    line-height: 160px;
+  }
+  #error-banner .container p {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }/*# sourceMappingURL=style.css.map */

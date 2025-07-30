@@ -1,0 +1,52 @@
+/* 404 Page Styles */
+#error-banner {
+  position: relative;
+  background-color: #f9f0f0;
+  .container {
+    position: relative;
+    min-height: 60vh;
+    * {
+      position: relative;
+      text-align: center;
+    }
+    h1 {
+      font-size: 250px;
+      line-height: 260px;
+      font-weight: 800;
+      color: var(--primary-accent-color);
+    }
+    p {
+      font-size: 30px;
+      line-height: 32px;
+      color: var(--foreground-color);
+      margin-bottom: 2em;
+    }
+    a {
+      background-color: var(--primary-accent-color);
+      color: var(--background-color);
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        scale: 0.95;
+      }
+    }
+  }
+}
+
+/* Responsive layout for Mobile devices */
+@media (max-width: 768px) {
+  #error-banner {
+    .container {
+      h1 {
+        font-size: 150px;
+        line-height: 160px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 22px;
+      }
+    }
+  }
+}
