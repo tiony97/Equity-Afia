@@ -83,11 +83,15 @@
 }
 
 #other-locations {
+  height: fit-content;
   min-height: 250px;
   background-color: #fdf2f1;
   padding: 2em 0;
   .container {
     .filter-items {
+      height: fit-content;
+      position: relative;
+
       form {
         input {
           width: 160px;
@@ -196,27 +200,28 @@
 /* Responsive layout for Mobile devices */
 @media (max-width: 768px) {
   #other-locations {
-    min-height: 250px;
+    min-height: fit-content !important;
     .container {
       .filter-section {
         h2 {
           width: 100%;
         }
-        .filter-items {
-          form {
-            height: 35px;
+        form {
+          min-height: 180px;
+          input {
             width: 100%;
-            margin-bottom: 1em;
-            input {
-              font-size: 16px;
-              line-height: 22px;
-              &::placeholder {
-                font-size: 16px;
-              }
-            }
           }
-          span {
-            padding: 6px 12px;
+          .items {
+            select {
+              padding: 8px 32px 8px 16px;
+            }
+
+            button {
+              padding: 8px 16px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
           }
         }
       }

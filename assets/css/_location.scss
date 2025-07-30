@@ -837,12 +837,24 @@
       padding: 2em 1.5em;
       .filter-items {
         form {
-          height: 35px;
-          width: 100%;
-          margin-bottom: 1em;
-        }
-        span {
-          padding: 6px 12px;
+          min-height: 180px;
+          input {
+            width: 100%;
+          }
+          .items {
+            .items {
+              select {
+                padding: 8px 32px 8px 16px;
+              }
+
+              button {
+                padding: 8px 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+          }
         }
       }
 

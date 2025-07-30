@@ -2826,9 +2826,16 @@ footer .footer-bar .container .fb-links a:last-of-type::after {
 }
 
 #other-locations {
+  height: -moz-fit-content;
+  height: fit-content;
   min-height: 250px;
   background-color: #fdf2f1;
   padding: 2em 0;
+}
+#other-locations .container .filter-items {
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
 }
 #other-locations .container .filter-items form input {
   width: 160px;
@@ -2927,28 +2934,26 @@ footer .footer-bar .container .fb-links a:last-of-type::after {
 /* Responsive layout for Mobile devices */
 @media (max-width: 768px) {
   #other-locations {
-    min-height: 250px;
+    min-height: -moz-fit-content !important;
+    min-height: fit-content !important;
   }
   #other-locations .container .filter-section h2 {
     width: 100%;
   }
-  #other-locations .container .filter-section .filter-items form {
-    height: 35px;
+  #other-locations .container .filter-section form {
+    min-height: 180px;
+  }
+  #other-locations .container .filter-section form input {
     width: 100%;
-    margin-bottom: 1em;
   }
-  #other-locations .container .filter-section .filter-items form input {
-    font-size: 16px;
-    line-height: 22px;
+  #other-locations .container .filter-section form .items select {
+    padding: 8px 32px 8px 16px;
   }
-  #other-locations .container .filter-section .filter-items form input::-moz-placeholder {
-    font-size: 16px;
-  }
-  #other-locations .container .filter-section .filter-items form input::placeholder {
-    font-size: 16px;
-  }
-  #other-locations .container .filter-section .filter-items span {
-    padding: 6px 12px;
+  #other-locations .container .filter-section form .items button {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   #other-locations .container .locations .location h6 {
     font-size: 20px;
@@ -3755,12 +3760,19 @@ footer .footer-bar .container .fb-links a:last-of-type::after {
     padding: 2em 1.5em;
   }
   #location-map .content .filter-items form {
-    height: 35px;
-    width: 100%;
-    margin-bottom: 1em;
+    min-height: 180px;
   }
-  #location-map .content .filter-items span {
-    padding: 6px 12px;
+  #location-map .content .filter-items form input {
+    width: 100%;
+  }
+  #location-map .content .filter-items form .items .items select {
+    padding: 8px 32px 8px 16px;
+  }
+  #location-map .content .filter-items form .items .items button {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   #location-map .content .locations .location {
     min-height: 100px;
