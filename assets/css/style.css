@@ -2933,6 +2933,16 @@ footer .footer-bar .container .fb-links a:last-of-type::after {
 
 /* Responsive layout for Mobile devices */
 @media (max-width: 768px) {
+  .contact-form .container {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+  .contact-form .container .content {
+    width: 100%;
+  }
+  .contact-form .container form {
+    width: 100%;
+  }
   #other-locations {
     min-height: -moz-fit-content !important;
     min-height: fit-content !important;

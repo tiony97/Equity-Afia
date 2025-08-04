@@ -199,6 +199,18 @@
 
 /* Responsive layout for Mobile devices */
 @media (max-width: 768px) {
+  .contact-form {
+    .container {
+      display: flex !important;
+      flex-direction: column-reverse !important;
+      .content {
+        width: 100%;
+      }
+      form {
+        width: 100%;
+      }
+    }
+  }
   #other-locations {
     min-height: fit-content !important;
     .container {
