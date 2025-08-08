@@ -273,3 +273,5 @@ $(document).ready(function () {
     }
   });
 });
+
+//About page "team" section
