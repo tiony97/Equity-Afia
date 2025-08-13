@@ -165,13 +165,12 @@
 .team-member-name {
   font-size: 16px;
   text-transform: capitalize !important;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 5px;
-  color: #333;
 }
 
 .team-member-title {
-  font-size: 12px;
+  font-size: 15px;
   color: #666;
   line-height: 1.4;
 }
@@ -199,60 +198,58 @@
 .team-member-popup {
   display: flex;
   flex-direction: column;
-}
-
-.popup-header {
-  display: flex;
-  margin-bottom: 30px;
-}
-
-.popup-image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 5px;
-  margin-right: 30px;
-}
-
-.popup-header-info {
-  flex: 1;
-}
-
-.popup-name {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-.popup-title {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 15px;
-  line-height: 1.4;
-}
-
-.popup-bio {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #555;
-}
-
-@media (max-width: 768px) {
   .popup-header {
-    flex-direction: column;
+    display: flex;
+    margin-bottom: 30px;
   }
 
   .popup-image {
-    margin-right: 0;
-    margin-bottom: 20px;
-    width: 100%;
-    height: auto;
-    max-height: 300px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 30px;
   }
 
+  .popup-header-info {
+    flex: 1;
+  }
+
+  .popup-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  .popup-title {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+
+  .popup-bio {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+  }
+}
+
+@media (max-width: 768px) {
   .team-members-grid {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    .popup-header {
+      flex-direction: column;
+    }
+
+    .popup-image {
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+    }
   }
 }
 

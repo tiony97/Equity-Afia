@@ -274,4 +274,38 @@ $(document).ready(function () {
   });
 });
 
-//About page "team" section
+//Cookie Consent
+$(document).ready(function () {
+  // Only show if consent wasn't given
+  if (!localStorage.getItem("cookieConsent")) {
+    setTimeout(function () {
+      $(".body-overlay").addClass("open");
+      $("#cookie-consent-popup").addClass("visible").css("display", "block");
+    }, 1000); // 1 second delay
+  }
+
+  // Handle consent button click
+  $("#cookie-consent-button").on("click", function () {
+    $(".body-overlay").removeClass("open");
+    $("#cookie-consent-popup")
+      .removeClass("visible")
+      .delay(500) // matches transition duration
+      .queue(function () {
+        $(this).css("display", "none").dequeue();
+      });
+
+    // Store consent
+    localStorage.setItem("cookieConsent", "true");
+  });
+
+  // Optional: Close when clicking on overlay
+  $(".body-overlay").on("click", function () {
+    $(this).removeClass("open");
+    $("#cookie-consent-popup")
+      .removeClass("visible")
+      .delay(500)
+      .queue(function () {
+        $(this).css("display", "none").dequeue();
+      });
+  });
+});

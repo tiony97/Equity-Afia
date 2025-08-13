@@ -695,7 +695,7 @@ footer {
 }
 
 #common-banner {
-  height: 400px;
+  height: fit-content;
   width: 100%;
   background: url(../images/footer-bg.jpeg) center center;
   object-fit: cover;
@@ -721,16 +721,92 @@ footer {
     }
 
     .image-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 53%;
       height: 100%;
       z-index: 3 !important;
       img {
         width: 100%;
-        height: 100%;
-        object-fit: fill;
+        height: auto;
+        object-fit: cover;
         z-index: 3 !important;
       }
     }
+  }
+}
+
+// Cookie Consent Styles
+.cookie-consent-popup {
+  position: fixed;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 800px;
+  background: #9a3821;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+
+  &.visible {
+    bottom: 20px;
+    opacity: 1;
+  }
+
+  .cookie-consent-content {
+    p {
+      margin-bottom: 13px;
+      line-height: 1.5;
+      font-size: 14px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+
+    a {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--secondary-accent-color);
+    }
+  }
+
+  .cookie-consent-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .cookie-consent-btn {
+    background: #e2231a;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-transform: capitalize;
+    font-weight: bold;
+
+    img {
+      width: 25px;
+      height: 25px;
+      object-fit: contain;
+    }
+
+    &:hover {
+      background: var(--secondary-accent-color);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .cookie-consent-popup {
+    width: 95%;
+    padding: 15px;
   }
 }
 
@@ -955,3 +1031,4 @@ footer {
 @import "./location";
 @import "./apply";
 @import "./404";
+@import "./leadership";
